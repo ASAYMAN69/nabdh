@@ -1,0 +1,66 @@
+[
+  {
+    "name": "bfawho2007.txt",
+    "path": "data-raw/growthstandards/bfawho2007.txt",
+    "sha": "f0dbe1a7efa48a1474447a8fa16193a5d4d3d76c",
+    "size": 10475,
+    "url": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/contents/data-raw/growthstandards/bfawho2007.txt?ref=main",
+    "html_url": "https://github.com/WorldHealthOrganization/anthroplus/blob/main/data-raw/growthstandards/bfawho2007.txt",
+    "git_url": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/git/blobs/f0dbe1a7efa48a1474447a8fa16193a5d4d3d76c",
+    "download_url": "https://raw.githubusercontent.com/WorldHealthOrganization/anthroplus/main/data-raw/growthstandards/bfawho2007.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/contents/data-raw/growthstandards/bfawho2007.txt?ref=main",
+      "git": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/git/blobs/f0dbe1a7efa48a1474447a8fa16193a5d4d3d76c",
+      "html": "https://github.com/WorldHealthOrganization/anthroplus/blob/main/data-raw/growthstandards/bfawho2007.txt"
+    }
+  },
+  {
+    "name": "hfawho2007.txt",
+    "path": "data-raw/growthstandards/hfawho2007.txt",
+    "sha": "a8b270406a61b91dec427b174539bfab51f160db",
+    "size": 8775,
+    "url": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/contents/data-raw/growthstandards/hfawho2007.txt?ref=main",
+    "html_url": "https://github.com/WorldHealthOrganization/anthroplus/blob/main/data-raw/growthstandards/hfawho2007.txt",
+    "git_url": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/git/blobs/a8b270406a61b91dec427b174539bfab51f160db",
+    "download_url": "https://raw.githubusercontent.com/WorldHealthOrganization/anthroplus/main/data-raw/growthstandards/hfawho2007.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/contents/data-raw/growthstandards/hfawho2007.txt?ref=main",
+      "git": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/git/blobs/a8b270406a61b91dec427b174539bfab51f160db",
+      "html": "https://github.com/WorldHealthOrganization/anthroplus/blob/main/data-raw/growthstandards/hfawho2007.txt"
+    }
+  },
+  {
+    "name": "package.R",
+    "path": "data-raw/growthstandards/package.R",
+    "sha": "af2bf4950186547af596b81c6dcb33fd278d2b10",
+    "size": 715,
+    "url": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/contents/data-raw/growthstandards/package.R?ref=main",
+    "html_url": "https://github.com/WorldHealthOrganization/anthroplus/blob/main/data-raw/growthstandards/package.R",
+    "git_url": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/git/blobs/af2bf4950186547af596b81c6dcb33fd278d2b10",
+    "download_url": "https://raw.githubusercontent.com/WorldHealthOrganization/anthroplus/main/data-raw/growthstandards/package.R",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/contents/data-raw/growthstandards/package.R?ref=main",
+      "git": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/git/blobs/af2bf4950186547af596b81c6dcb33fd278d2b10",
+      "html": "https://github.com/WorldHealthOrganization/anthroplus/blob/main/data-raw/growthstandards/package.R"
+    }
+  },
+  {
+    "name": "wfawho2007.txt",
+    "path": "data-raw/growthstandards/wfawho2007.txt",
+    "sha": "f2893b6bd11827340524e9fafe6b972dbe8cb374",
+    "size": 3779,
+    "url": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/contents/data-raw/growthstandards/wfawho2007.txt?ref=main",
+    "html_url": "https://github.com/WorldHealthOrganization/anthroplus/blob/main/data-raw/growthstandards/wfawho2007.txt",
+    "git_url": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/git/blobs/f2893b6bd11827340524e9fafe6b972dbe8cb374",
+    "download_url": "https://raw.githubusercontent.com/WorldHealthOrganization/anthroplus/main/data-raw/growthstandards/wfawho2007.txt",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/contents/data-raw/growthstandards/wfawho2007.txt?ref=main",
+      "git": "https://api.github.com/repos/WorldHealthOrganization/anthroplus/git/blobs/f2893b6bd11827340524e9fafe6b972dbe8cb374",
+      "html": "https://github.com/WorldHealthOrganization/anthroplus/blob/main/data-raw/growthstandards/wfawho2007.txt"
+    }
+  }
+]

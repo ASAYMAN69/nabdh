@@ -1,0 +1,4 @@
+id,age,sex,bmi,hba1c,fpg,total_chol,hdl,ldl,triglycerides,egfr,district,language
+LAB-001,45,male,31,6.9,126,220,40,150,180,78,Al Ain,EN
+LAB-002,46,female,29,5.7,100,210,45,130,150,90,Khalifa City,AR
+LAB-003,52,male,30,6.0,108,240,38,160,200,72,Mussafah,EN

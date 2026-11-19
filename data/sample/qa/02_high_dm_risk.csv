@@ -1,0 +1,5 @@
+id,age,sex,height_cm,weight_kg,bmi,waist_cm,diastolic_bp,family_hx_diabetes,diagnosed_htn,high_chol,cvd_history,current_smoker,sleep_hours,income_ratio,education,pregnant,glucose_test_3y,district,language
+DM-001,58,male,172,98,33.1,108,92,yes,yes,yes,no,no,6,1.2,2,no,no,Al Ain,EN
+DM-002,61,female,158,86,34.4,102,88,yes,no,yes,no,no,6.5,1.5,2,no,no,Khalifa City,AR
+DM-003,47,male,175,92,30.0,100,86,yes,no,no,no,yes,5.5,2.0,3,no,no,Mussafah,EN
+DM-004,55,female,160,90,35.2,105,90,yes,yes,no,no,no,6,1.0,1,no,no,Al Ain,TL

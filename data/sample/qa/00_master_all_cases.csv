@@ -1,0 +1,207 @@
+id,age,sex,height_cm,weight_kg,bmi,waist_cm,whtr,systolic_bp,diastolic_bp,family_hx_diabetes,family_hx_cvd,diagnosed_htn,high_chol,cvd_history,ckd,current_smoker,pack_years,sleep_hours,pregnant,glucose_test_3y,chol_test_5y,colorectal_screen_10y,mammogram_2y,cervical_screen_3y,healthcare_visit_12m,hba1c,fpg,hba1c_mmol_mol,fpg_mmol_l,total_chol,hdl,ldl,triglycerides,total_chol_mmol_l,hdl_mmol_l,ldl_mmol_l,triglycerides_mmol_l,egfr,troponin_i,troponin_i_ng_l,nt_probnp,nt_probnp_pg_ml,d_dimer,d_dimer_ug_ml,lvef_pct,lvef_fraction,coronary_calcium_score,hs_crp,lp_a,missed_well_child_visits,developmental_delay_flag,immunization_status,prs_cardiometabolic,g6pd_status,thalassemia_carrier,education,income_ratio,district,language,diagnosed_diabetes,borderline_diabetes
+M-HLTHY-001,20,female,158,51.2,20.5,71,,108,68,no,no,no,no,no,no,no,,7.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Al Ain,EN,no,no
+M-HLTHY-002,24,male,163,57.7,21.7,75,,112,72,no,no,no,no,no,no,no,,7.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.0,Khalifa City,AR,no,no
+M-HLTHY-003,28,female,168,64.6,22.9,80,,116,76,no,no,no,no,no,no,no,,7.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,2.5,Mussafah,TL,no,no
+M-HLTHY-004,32,male,173,72.1,24.1,78,,120,68,yes,no,no,no,no,no,no,,7.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,5,3.0,Yas Island,UR,no,no
+M-HLTHY-005,36,female,178,65.0,20.5,82,,108,72,no,no,no,no,no,no,no,,7.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Liwa Oasis,EN,no,no
+M-HLTHY-006,40,male,158,54.2,21.7,75,,112,76,no,no,no,no,no,no,no,,7.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.0,Al Ain,AR,no,no
+M-HLTHY-007,44,female,163,60.8,22.9,73,,116,68,no,no,no,no,no,no,no,,7.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,2.5,Khalifa City,TL,no,no
+M-HLTHY-008,48,male,168,68.0,24.1,78,,120,72,no,no,no,no,no,no,no,,7.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,5,3.0,Mussafah,UR,no,no
+M-HLTHY-009,52,female,173,61.4,20.5,82,,108,76,no,no,no,no,no,no,no,,7.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Yas Island,EN,no,no
+M-HLTHY-010,56,male,178,68.8,21.7,80,,112,68,yes,no,no,no,no,no,no,,7.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.0,Liwa Oasis,AR,no,no
+M-HLTHY-011,60,female,158,57.2,22.9,73,,116,72,no,no,no,no,no,no,no,,7.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,2.5,Al Ain,TL,no,no
+M-HLTHY-012,64,male,163,64.0,24.1,77,,120,76,no,no,no,no,no,no,no,,7.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,5,3.0,Khalifa City,UR,no,no
+M-HLTHY-013,68,female,168,57.9,20.5,76,,108,68,no,no,no,no,no,no,no,,7.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Mussafah,EN,no,no
+M-HLTHY-014,72,male,173,64.9,21.7,80,,112,72,no,no,no,no,no,no,no,,7.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.0,Yas Island,AR,no,no
+M-HLTHY-015,76,female,178,72.6,22.9,84,,116,76,no,no,no,no,no,no,no,,7.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,2.5,Liwa Oasis,TL,no,no
+M-DMRISK-001,35,male,160,78.1,30.5,96,0.6,,86,yes,no,yes,yes,no,no,yes,,5.5,no,no,yes,no,no,yes,yes,5.8,104,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.0,Al Ain,EN,no,no
+M-DMRISK-002,37,female,165,87.1,32.0,99,0.6,,88,yes,no,no,no,no,no,no,,6.0,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Khalifa City,AR,no,no
+M-DMRISK-003,39,male,170,96.8,33.5,102,0.6,,90,yes,no,no,no,no,no,no,,6.5,no,no,yes,no,no,yes,yes,6.2,112,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,2.0,Mussafah,TL,no,no
+M-DMRISK-004,41,female,175,107.2,35.0,105,0.6,,92,yes,no,yes,no,no,no,no,,5.5,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.0,Yas Island,UR,no,no
+M-DMRISK-005,43,male,160,93.4,36.5,108,0.675,,94,yes,no,no,yes,no,no,no,,6.0,no,no,yes,no,no,yes,yes,5.8,120,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.5,Liwa Oasis,EN,no,no
+M-DMRISK-006,45,female,165,83.0,30.5,96,0.582,,86,yes,no,no,no,no,no,yes,,6.5,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,2.0,Al Ain,AR,no,no
+M-DMRISK-007,47,male,170,92.5,32.0,99,0.582,,88,yes,no,yes,no,no,no,no,,5.5,no,no,yes,no,no,yes,yes,6.2,108,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.0,Khalifa City,TL,no,no
+M-DMRISK-008,49,female,175,102.6,33.5,102,0.583,,90,yes,no,no,no,no,no,no,,6.0,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Mussafah,UR,no,no
+M-DMRISK-009,51,male,160,89.6,35.0,105,0.656,,92,yes,no,no,yes,no,no,no,,6.5,no,no,yes,no,no,yes,yes,5.8,116,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,2.0,Yas Island,EN,no,no
+M-DMRISK-010,53,female,165,99.4,36.5,108,0.655,,94,yes,no,yes,no,no,no,no,,5.5,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.0,Liwa Oasis,AR,no,no
+M-DMRISK-011,55,male,170,88.1,30.5,96,0.565,,86,yes,no,no,no,no,no,yes,,6.0,no,no,yes,no,no,yes,yes,6.2,104,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.5,Al Ain,TL,no,no
+M-DMRISK-012,57,female,175,98.0,32.0,99,0.566,,88,yes,no,no,no,no,no,no,,6.5,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,2.0,Khalifa City,UR,no,no
+M-DMRISK-013,59,male,160,85.8,33.5,102,0.637,,90,yes,no,yes,yes,no,no,no,,5.5,no,no,yes,no,no,yes,yes,5.8,112,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.0,Mussafah,EN,no,no
+M-DMRISK-014,61,female,165,95.3,35.0,105,0.636,,92,yes,no,no,no,no,no,no,,6.0,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Yas Island,AR,no,no
+M-DMRISK-015,63,male,170,105.5,36.5,108,0.635,,94,yes,no,no,no,no,no,no,,6.5,no,no,yes,no,no,yes,yes,6.2,120,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,2.0,Liwa Oasis,TL,no,no
+M-DMRISK-016,65,female,175,93.4,30.5,96,0.549,,86,yes,no,yes,no,no,no,yes,,5.5,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.0,Al Ain,UR,no,no
+M-DMRISK-017,67,male,160,81.9,32.0,99,0.619,,88,yes,no,no,yes,no,no,no,,6.0,no,no,yes,no,no,yes,yes,5.8,108,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.5,Khalifa City,EN,no,no
+M-DMRISK-018,69,female,165,91.2,33.5,102,0.618,,90,yes,no,no,no,no,no,no,,6.5,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,2.0,Mussafah,AR,no,no
+M-DMRISK-019,71,male,170,101.1,35.0,105,0.618,,92,yes,no,yes,no,no,no,no,,5.5,no,no,yes,no,no,yes,yes,6.2,116,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.0,Yas Island,TL,no,no
+M-DMRISK-020,73,female,175,111.8,36.5,108,0.617,,94,yes,no,no,no,no,no,no,,6.0,no,no,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Liwa Oasis,UR,no,no
+M-HTN-001,40,female,162,72.2,27.5,92,,142,88,yes,no,no,yes,no,no,yes,,5.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.2,Al Ain,EN,no,no
+M-HTN-002,42,male,166,79.6,28.9,95,,148,92,no,no,no,no,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.7,Khalifa City,AR,no,no
+M-HTN-003,44,female,170,87.6,30.3,98,,152,94,no,no,no,no,no,no,no,,6.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.2,Mussafah,TL,no,no
+M-HTN-004,46,male,174,96.0,31.7,101,,158,96,yes,no,no,no,no,no,no,,5.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,1.2,Yas Island,UR,no,no
+M-HTN-005,48,female,162,86.9,33.1,92,,165,100,no,no,no,yes,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.7,Liwa Oasis,EN,no,no
+M-HTN-006,50,male,166,75.8,27.5,95,,172,104,no,no,no,no,no,no,yes,,6.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,2.2,Al Ain,AR,no,no
+M-HTN-007,52,female,170,83.5,28.9,98,,178,108,yes,no,no,no,no,no,no,,5.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,1.2,Khalifa City,TL,no,no
+M-HTN-008,54,male,174,91.7,30.3,101,,185,115,no,no,no,no,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,1.7,Mussafah,UR,no,no
+M-HTN-009,56,female,162,83.2,31.7,92,,142,88,no,no,no,yes,no,no,no,,6.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,2.2,Yas Island,EN,no,no
+M-HTN-010,58,male,166,91.2,33.1,95,,148,92,yes,no,no,no,no,no,no,,5.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.2,Liwa Oasis,AR,no,no
+M-HTN-011,60,female,170,79.5,27.5,98,,152,94,no,no,no,no,no,no,yes,,6.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,1.7,Al Ain,TL,no,no
+M-HTN-012,62,male,174,87.5,28.9,101,,158,96,no,no,no,no,no,no,no,,6.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,2.2,Khalifa City,UR,no,no
+M-HTN-013,64,female,162,79.5,30.3,92,,165,100,yes,no,no,yes,no,no,no,,5.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.2,Mussafah,EN,no,no
+M-HTN-014,66,male,166,87.4,31.7,95,,172,104,no,no,no,no,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.7,Yas Island,AR,no,no
+M-HTN-015,68,female,170,95.7,33.1,98,,178,108,no,no,no,no,no,no,no,,6.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.2,Liwa Oasis,TL,no,no
+M-HTN-016,70,male,174,83.3,27.5,101,,185,115,yes,no,no,no,no,no,yes,,5.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,1.2,Al Ain,UR,no,no
+M-HTN-017,72,female,162,75.8,28.9,92,,142,88,no,no,no,yes,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.7,Khalifa City,EN,no,no
+M-HTN-018,74,male,166,83.5,30.3,95,,148,92,no,no,no,no,no,no,no,,6.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,2.2,Mussafah,AR,no,no
+M-HTN-019,76,female,170,91.6,31.7,98,,152,94,yes,no,no,no,no,no,no,,5.5,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,1.2,Yas Island,TL,no,no
+M-HTN-020,78,male,174,100.2,33.1,101,,158,96,no,no,no,no,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,1.7,Liwa Oasis,UR,no,no
+M-PREG-001,20,female,158,54.9,22.0,76,,110,70,yes,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-PREG-002,22,female,162,64.3,24.5,78,,118,75,no,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,AR,no,no
+M-PREG-003,24,female,166,74.4,27.0,80,,125,78,no,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,TL,no,no
+M-PREG-004,26,female,170,85.3,29.5,82,,132,82,yes,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,UR,no,no
+M-PREG-005,28,female,158,79.9,32.0,76,,140,88,no,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,EN,no,no
+M-PREG-006,30,female,162,57.7,22.0,78,,145,92,no,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,AR,no,no
+M-PREG-007,32,female,166,67.5,24.5,80,,150,95,yes,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,TL,no,no
+M-PREG-008,34,female,170,78.0,27.0,82,,158,100,no,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,UR,no,no
+M-PREG-009,36,female,158,73.6,29.5,76,,165,105,no,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,EN,no,no
+M-PREG-010,38,female,162,84.0,32.0,78,,170,110,yes,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,AR,no,no
+M-PED-001,0.5,female,68,7.6,16.5,31,,95,55,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-PED-002,1,male,75,9.6,17.0,34,,99,58,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,1,no,overdue,low,normal,no,,,Khalifa City,AR,no,no
+M-PED-003,2,female,88,14.0,18.1,40,,103,61,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,2,no,incomplete,low,normal,no,,,Mussafah,TL,no,no
+M-PED-004,3,male,96,14.3,15.5,43,,107,64,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,complete,low,normal,no,,,Yas Island,UR,no,no
+M-PED-005,4,female,103,17.0,16.0,46,,111,55,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,1,no,up_to_date,low,normal,no,,,Liwa Oasis,EN,no,no
+M-PED-006,5,male,110,18.2,15.0,50,,95,58,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,2,no,overdue,low,normal,no,,,Al Ain,AR,no,no
+M-PED-007,6,female,116,19.5,14.5,52,,99,61,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,incomplete,low,normal,no,,,Khalifa City,TL,no,no
+M-PED-008,8,male,128,31.9,19.5,58,,103,64,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,1,yes,complete,low,normal,no,,,Mussafah,UR,no,no
+M-PED-009,10,female,140,43.1,22.0,63,,107,55,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,2,no,up_to_date,low,normal,no,,,Yas Island,EN,no,no
+M-PED-010,12,male,152,67.9,29.4,68,,111,58,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,overdue,low,normal,no,,,Liwa Oasis,AR,no,no
+M-PED-011,14,female,163,82.4,31.0,73,,95,61,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,1,no,incomplete,low,normal,no,,,Al Ain,TL,no,no
+M-PED-012,16,male,170,54.9,19.0,76,,99,64,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,2,no,complete,low,normal,no,,,Khalifa City,UR,no,no
+M-PED-013,18,female,172,71.0,24.0,77,,103,55,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,up_to_date,low,normal,no,,,Mussafah,EN,no,no
+M-PED-014,19,male,173,80.8,27.0,78,,107,58,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,1,no,overdue,low,normal,no,,,Yas Island,AR,no,no
+M-PED-015,0.5,female,68,7.6,16.5,31,,111,61,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,2,no,incomplete,low,normal,no,,,Liwa Oasis,TL,no,no
+M-PED-016,1,male,75,9.6,17.0,34,,95,64,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,complete,low,normal,no,,,Al Ain,UR,no,no
+M-PED-017,2,female,88,14.0,18.1,40,,99,55,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,1,no,up_to_date,low,normal,no,,,Khalifa City,EN,no,no
+M-PED-018,3,male,96,14.3,15.5,43,,103,58,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,2,no,overdue,low,normal,no,,,Mussafah,AR,no,no
+M-PED-019,4,female,103,17.0,16.0,46,,107,61,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,incomplete,low,normal,no,,,Yas Island,TL,no,no
+M-PED-020,5,male,110,18.2,15.0,50,,111,64,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,1,no,complete,low,normal,no,,,Liwa Oasis,UR,no,no
+M-PED-021,6,female,116,19.5,14.5,52,,95,55,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,2,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-PED-022,8,male,128,31.9,19.5,58,,99,58,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,overdue,low,normal,no,,,Khalifa City,AR,no,no
+M-PED-023,10,female,140,43.1,22.0,63,,103,61,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,1,no,incomplete,low,normal,no,,,Mussafah,TL,no,no
+M-PED-024,12,male,152,67.9,29.4,68,,107,64,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,2,no,complete,low,normal,no,,,Yas Island,UR,no,no
+M-PED-025,14,female,163,82.4,31.0,73,,111,55,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,0,no,up_to_date,low,normal,no,,,Liwa Oasis,EN,no,no
+M-DMLAB-001,30,male,162,65.6,25.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,39,5.6,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,yes,yes
+M-DMLAB-002,32,female,166,75.8,27.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,5.9,105,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,AR,no,no
+M-DMLAB-003,34,male,170,86.7,30.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,6.1,110,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,TL,no,no
+M-DMLAB-004,36,female,174,98.4,32.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,45,6.4,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,UR,no,no
+M-DMLAB-005,38,male,162,91.9,35.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,6.5,120,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,EN,no,yes
+M-DMLAB-006,40,female,166,68.9,25.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,6.7,126,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,AR,yes,no
+M-DMLAB-007,42,male,170,79.5,27.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,52,7.2,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,TL,no,no
+M-DMLAB-008,44,female,174,90.8,30.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,7.2,140,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,UR,no,no
+M-DMLAB-009,46,male,162,85.3,32.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,7.5,160,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,EN,no,yes
+M-DMLAB-010,48,female,166,96.4,35.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,64,10.0,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,AR,no,no
+M-DMLAB-011,50,male,170,72.2,25.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,5.7,100,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,TL,yes,no
+M-DMLAB-012,52,female,174,83.3,27.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,5.9,105,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,UR,no,no
+M-DMLAB-013,54,male,162,78.7,30.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,43,6.1,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,EN,no,yes
+M-DMLAB-014,56,female,166,89.6,32.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,6.3,115,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,AR,no,no
+M-DMLAB-015,58,male,170,101.1,35.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,6.5,120,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,TL,no,no
+M-DMLAB-016,60,female,174,75.7,25.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,50,7.0,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,UR,yes,no
+M-DMLAB-017,62,male,162,72.2,27.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,6.9,130,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,EN,no,yes
+M-DMLAB-018,64,female,166,82.7,30.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,7.2,140,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,AR,no,no
+M-DMLAB-019,66,male,170,93.9,32.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,58,8.9,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,TL,no,no
+M-DMLAB-020,68,female,174,106.0,35.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,8.0,180,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,UR,no,no
+M-LIPID-001,40,female,160,66.6,26.0,,,,,no,no,no,yes,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,4.65,1.55,2.59,1.35,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-LIPID-002,42,male,165,74.9,27.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,200,55,120,150,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,AR,no,no
+M-LIPID-003,44,female,170,83.8,29.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,220,50,140,180,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,TL,no,no
+M-LIPID-004,46,male,175,93.4,30.5,,,,,no,no,no,yes,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,240,45,160,200,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,UR,no,no
+M-LIPID-005,48,female,160,81.9,32.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,6.72,1.03,4.65,2.48,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,EN,no,no
+M-LIPID-006,50,male,165,70.8,26.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,280,35,100,250,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,AR,no,no
+M-LIPID-007,52,female,170,79.5,27.5,,,,,no,no,no,yes,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,300,30,120,300,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,TL,no,no
+M-LIPID-008,54,male,175,88.8,29.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,180,60,140,120,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,UR,no,no
+M-LIPID-009,56,female,160,78.1,30.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,5.17,1.42,4.14,1.69,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,EN,no,no
+M-LIPID-010,58,male,165,87.1,32.0,,,,,no,no,no,yes,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,220,50,180,180,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,AR,no,no
+M-LIPID-011,60,female,170,75.1,26.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,240,45,100,200,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,TL,no,no
+M-LIPID-012,62,male,175,84.2,27.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,260,40,120,220,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,UR,no,no
+M-LIPID-013,64,female,160,74.2,29.0,,,,,no,no,no,yes,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,7.24,0.91,3.62,2.82,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,EN,no,no
+M-LIPID-014,66,male,165,83.0,30.5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,300,30,160,300,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,AR,no,no
+M-LIPID-015,68,female,170,92.5,32.0,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,180,60,180,120,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,TL,no,no
+M-CKD-001,50,male,160,61.4,24,,,,,no,no,yes,yes,yes,yes,yes,,5.5,no,yes,yes,no,no,yes,yes,,,,,240,38,150,200,,,,,15,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.0,Al Ain,EN,no,no
+M-CKD-002,53,female,165,70.8,26,,,,,no,no,yes,yes,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,255,35,160,220,,,,,20,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Khalifa City,AR,no,no
+M-CKD-003,56,male,170,80.9,28,,,,,no,no,yes,yes,yes,no,no,,6.5,no,yes,yes,no,no,yes,yes,,,,,270,32,170,240,,,,,25,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.0,Mussafah,TL,no,no
+M-CKD-004,59,female,175,91.9,30,,,,,no,no,yes,yes,no,no,yes,,5.5,no,yes,yes,no,no,yes,yes,,,,,285,38,180,260,,,,,30,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.0,Yas Island,UR,no,no
+M-CKD-005,62,male,160,61.4,24,,,,,no,no,yes,yes,yes,yes,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,240,35,150,200,,,,,35,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Liwa Oasis,EN,no,no
+M-CKD-006,65,female,165,70.8,26,,,,,no,no,yes,yes,no,no,no,,6.5,no,yes,yes,no,no,yes,yes,,,,,255,32,160,220,,,,,40,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.0,Al Ain,AR,no,no
+M-CKD-007,68,male,170,80.9,28,,,,,no,no,yes,yes,yes,no,yes,,5.5,no,yes,yes,no,no,yes,yes,,,,,270,38,170,240,,,,,45,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.0,Khalifa City,TL,no,no
+M-CKD-008,71,female,175,91.9,30,,,,,no,no,yes,yes,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,,,,,285,35,180,260,,,,,50,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.5,Mussafah,UR,no,no
+M-CKD-009,74,male,160,61.4,24,,,,,no,no,yes,yes,yes,yes,no,,6.5,no,yes,yes,no,no,yes,yes,,,,,240,32,150,200,,,,,55,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.0,Yas Island,EN,no,no
+M-CKD-010,77,female,165,70.8,26,,,,,no,no,yes,yes,no,no,yes,,5.5,no,yes,yes,no,no,yes,yes,,,,,255,38,160,220,,,,,60,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,1.0,Liwa Oasis,AR,no,no
+M-CV-001,45,male,162,65.6,25,,,,,no,no,yes,no,yes,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,20,,100,,,,0.55,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-CV-002,48,female,167,75.3,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.03,,200,,,,50,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,AR,no,no
+M-CV-003,51,male,172,85.8,29,,,,,no,no,no,no,yes,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.04,,300,,,,45,,,,,,no,up_to_date,low,normal,no,,,Mussafah,TL,no,no
+M-CV-004,54,female,177,97.1,31,,,,,no,no,yes,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,50,,1000,,,,0.4,,,,,no,up_to_date,low,normal,no,,,Yas Island,UR,no,no
+M-CV-005,57,male,162,86.6,33,,,,,no,no,no,no,yes,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.18,,5000,,,,35,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,EN,no,no
+M-CV-006,60,female,167,69.7,25,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.5,,100,,,,30,,,,,,no,up_to_date,low,normal,no,,,Al Ain,AR,no,no
+M-CV-007,63,male,172,79.9,27,,,,,no,no,yes,no,yes,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,1000,,200,,,,0.25,,,,,no,up_to_date,low,normal,no,,,Khalifa City,TL,no,no
+M-CV-008,66,female,177,90.9,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,5.0,,300,,,,20,,,,,,no,up_to_date,low,normal,no,,,Mussafah,UR,no,no
+M-CV-009,69,male,162,81.4,31,,,,,no,no,no,no,yes,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.02,,1000,,,,55,,,,,,no,up_to_date,low,normal,no,,,Yas Island,EN,no,no
+M-CV-010,72,female,167,92.0,33,,,,,no,no,yes,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,30,,5000,,,,0.5,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,AR,no,no
+M-CV-011,75,male,172,74.0,25,,,,,no,no,no,no,yes,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.04,,100,,,,45,,,,,,no,up_to_date,low,normal,no,,,Al Ain,TL,no,no
+M-CV-012,78,female,177,84.6,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.05,,200,,,,40,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,UR,no,no
+M-CV-013,81,male,162,76.1,29,,,,,no,no,yes,no,yes,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,180,,300,,,,0.35,,,,,no,up_to_date,low,normal,no,,,Mussafah,EN,no,no
+M-CV-014,84,female,167,86.5,31,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.5,,1000,,,,30,,,,,,no,up_to_date,low,normal,no,,,Yas Island,AR,no,no
+M-CV-015,87,male,172,97.6,33,,,,,no,no,no,no,yes,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,1.0,,5000,,,,25,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,TL,no,no
+M-SUSPECT-001,50,male,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,180,,,,0.5,,0.45,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-SUSPECT-002,53,female,,,28,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.5,,,,500,,0.3,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,AR,no,no
+M-SUSPECT-003,56,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,4500,,,,1.2,,0.55,,,,,,no,up_to_date,low,normal,no,,,Mussafah,TL,no,no
+M-SUSPECT-004,59,female,,,30,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,90,,,,0.5,,0.45,,,,,,no,up_to_date,low,normal,no,,,Yas Island,UR,no,no
+M-SUSPECT-005,62,male,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,180,,,,500,,0.3,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,EN,no,no
+M-SUSPECT-006,65,female,,,28,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.5,,,,1.2,,0.55,,,,,,no,up_to_date,low,normal,no,,,Al Ain,AR,no,no
+M-SUSPECT-007,68,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,4500,,,,0.5,,0.45,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,TL,no,no
+M-SUSPECT-008,71,female,,,30,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,90,,,,500,,0.3,,,,,,no,up_to_date,low,normal,no,,,Mussafah,UR,no,no
+M-SUSPECT-009,74,male,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,180,,,,1.2,,0.55,,,,,,no,up_to_date,low,normal,no,,,Yas Island,EN,no,no
+M-SUSPECT-010,77,female,,,28,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,0.5,,,,0.5,,0.45,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,AR,no,no
+M-EDGE-001,,male,,,28,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-002,45,,,,28,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-003,130,male,,,28,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-004,0,male,,,28,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-005,50,male,,,-5,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-006,50,male,,,100,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-007,50,male,,,,,,300,200,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-008,50,male,,,,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,500,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-009,19,male,,,25,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-010,20,male,,,25,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-011,30,male,,,,,,,,no,no,no,no,no,no,no,,7,yes,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-012,40,1,,,,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-013,40,2,,,,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-DUP,50,male,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-DUP,50,male,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-EDGE-016,50,male,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Nowhere,XX,no,no
+M-SES-001,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,0.5,Al Ain,EN,no,no
+M-SES-002,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.0,Khalifa City,AR,no,no
+M-SES-003,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,2.0,Mussafah,TL,no,no
+M-SES-004,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,4,3.0,Yas Island,UR,no,no
+M-SES-005,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,5,5.0,Liwa Oasis,EN,no,no
+M-SES-006,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,college,0.5,Al Ain,AR,no,no
+M-SES-007,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,1.0,Khalifa City,TL,no,no
+M-SES-008,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,2.0,Mussafah,UR,no,no
+M-SES-009,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,3.0,Yas Island,EN,no,no
+M-SES-010,50,male,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,5.0,Liwa Oasis,AR,no,no
+M-SCR-001,40,female,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,yes,yes,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,EN,no,no
+M-SCR-002,44,male,,,28,,,,,no,no,no,no,no,no,no,,7,no,no,no,no,no,no,no,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,AR,no,no
+M-SCR-003,48,female,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,no,no,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,TL,no,no
+M-SCR-004,52,male,,,30,,,,,no,no,no,no,no,no,no,,7,no,no,yes,no,no,no,no,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,UR,no,no
+M-SCR-005,56,female,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,no,yes,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,EN,no,no
+M-SCR-006,60,male,,,28,,,,,no,no,no,no,no,no,no,,7,no,no,no,no,no,no,no,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Al Ain,AR,no,no
+M-SCR-007,64,female,,,29,,,,,no,no,no,no,no,no,no,,7,no,yes,yes,no,yes,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Khalifa City,TL,no,no
+M-SCR-008,68,male,,,30,,,,,no,no,no,no,no,no,no,,7,no,no,no,no,no,no,no,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Mussafah,UR,no,no
+M-SCR-009,72,female,,,27,,,,,no,no,no,no,no,no,no,,7,no,yes,no,yes,no,yes,yes,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Yas Island,EN,no,no
+M-SCR-010,76,male,,,28,,,,,no,no,no,no,no,no,no,,7,no,no,yes,no,no,no,no,,,,,,,,,,,,,,,,,,,,,,,,,,no,up_to_date,low,normal,no,,,Liwa Oasis,AR,no,no
+M-COMPLEX-001,65,male,160,71.7,28,100,,150,92,yes,no,yes,yes,yes,no,yes,,5.0,no,yes,yes,no,no,yes,yes,7.0,140,,,250,36,160,220,,,,,35,0.18,,1420,,,,36,,,,,,no,up_to_date,low,normal,no,1,0.8,Al Ain,EN,no,no
+M-COMPLEX-002,67,female,165,81.7,30,103,,158,96,yes,no,yes,yes,no,yes,no,,5.5,no,yes,yes,no,no,yes,yes,7.4,155,,,265,33,170,240,,,,,43,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.2000000000000002,Khalifa City,AR,no,no
+M-COMPLEX-003,69,male,170,92.5,32,106,,166,100,yes,no,yes,yes,yes,no,no,,6.0,no,yes,yes,no,no,yes,yes,7.8,170,,,280,30,180,260,,,,,51,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,1.6,Mussafah,TL,no,no
+M-COMPLEX-004,71,female,175,104.1,34,109,,174,104,yes,no,yes,yes,no,no,yes,,5.0,no,yes,yes,no,no,yes,yes,8.2,185,,,295,36,190,280,,,,,59,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,0.8,Yas Island,UR,no,no
+M-COMPLEX-005,73,male,160,71.7,28,100,,150,92,yes,no,yes,yes,yes,yes,no,,5.5,no,yes,yes,no,no,yes,yes,7.0,140,,,250,33,160,220,,,,,67,0.18,,1420,,,,36,,,,,,no,up_to_date,low,normal,no,2,1.2000000000000002,Liwa Oasis,EN,no,no
+M-COMPLEX-006,75,female,165,81.7,30,103,,158,96,yes,no,yes,yes,no,no,no,,6.0,no,yes,yes,no,no,yes,yes,7.4,155,,,265,30,170,240,,,,,35,,,,,,,,,,,,,no,up_to_date,low,normal,no,3,1.6,Al Ain,AR,no,no
+M-COMPLEX-007,77,male,170,92.5,32,106,,166,100,yes,no,yes,yes,yes,no,yes,,5.0,no,yes,yes,no,no,yes,yes,7.8,170,,,280,36,180,260,,,,,43,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,0.8,Khalifa City,TL,no,no
+M-COMPLEX-008,79,female,175,104.1,34,109,,174,104,yes,no,yes,yes,no,yes,no,,5.5,no,yes,yes,no,no,yes,yes,8.2,185,,,295,33,190,280,,,,,51,,,,,,,,,,,,,no,up_to_date,low,normal,no,2,1.2000000000000002,Mussafah,UR,no,no
+M-COMPLEX-009,81,male,160,71.7,28,100,,150,92,yes,no,yes,yes,yes,no,no,,6.0,no,yes,yes,no,no,yes,yes,7.0,140,,,250,30,160,220,,,,,59,0.18,,1420,,,,36,,,,,,no,up_to_date,low,normal,no,3,1.6,Yas Island,EN,no,no
+M-COMPLEX-010,83,female,165,81.7,30,103,,158,96,yes,no,yes,yes,no,no,yes,,5.0,no,yes,yes,no,no,yes,yes,7.4,155,,,265,36,170,240,,,,,67,,,,,,,,,,,,,no,up_to_date,low,normal,no,1,0.8,Liwa Oasis,AR,no,no

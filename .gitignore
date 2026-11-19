@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Data & model artifacts
+# Raw NHANES files are large and reproducible from data/DATASETS.md; the WHO
+# growth tables are required at runtime and are therefore committed.
+data/raw/*
+!data/raw/who_growth_standards/
+!data/raw/who_growth_standards/**
+data/processed/*
+!data/processed/.gitkeep
+
+# Model artifacts are small (~116 KB) and required to run the demo without
+# retraining. Commit the deployed models and their metrics.
+models/*
+!models/*.joblib
+!models/*.json
+
+# Runtime state
+data/outcomes.db
+
+# Logs & OS
+*.log
+.DS_Store
+.env

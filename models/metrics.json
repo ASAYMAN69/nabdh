@@ -1,0 +1,2726 @@
+{
+  "full__undiagnosed_dm": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 2777,
+        "prevalence": 0.04789,
+        "mean_pred": 0.03958,
+        "o_e_ratio": 1.2101,
+        "auc": 0.74731,
+        "pr_auc": 0.12359,
+        "brier": 0.04514,
+        "brier_skill": 0.01008,
+        "capture_top10pct": 0.2632,
+        "capture_top30pct": 0.6541,
+        "weighted_prevalence": 0.03078,
+        "weighted_mean_pred": 0.03086,
+        "weighted_o_e_ratio": 0.9974,
+        "weighted_auc": 0.77811,
+        "weighted_brier_skill": 0.02125,
+        "calibration": [
+          {
+            "pred": 0.0017,
+            "obs": 0.0036,
+            "n": 278
+          },
+          {
+            "pred": 0.0035,
+            "obs": 0.0072,
+            "n": 278
+          },
+          {
+            "pred": 0.0061,
+            "obs": 0.0144,
+            "n": 277
+          },
+          {
+            "pred": 0.0094,
+            "obs": 0.0108,
+            "n": 278
+          },
+          {
+            "pred": 0.0134,
+            "obs": 0.0288,
+            "n": 278
+          },
+          {
+            "pred": 0.0194,
+            "obs": 0.0433,
+            "n": 277
+          },
+          {
+            "pred": 0.0297,
+            "obs": 0.0576,
+            "n": 278
+          },
+          {
+            "pred": 0.0454,
+            "obs": 0.0975,
+            "n": 277
+          },
+          {
+            "pred": 0.0782,
+            "obs": 0.0899,
+            "n": 278
+          },
+          {
+            "pred": 0.1889,
+            "obs": 0.1259,
+            "n": 278
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 2777,
+        "prevalence": 0.04789,
+        "mean_pred": 0.03198,
+        "o_e_ratio": 1.4976,
+        "auc": 0.7529,
+        "pr_auc": 0.11234,
+        "brier": 0.0449,
+        "brier_skill": 0.01539,
+        "capture_top10pct": 0.2481,
+        "capture_top30pct": 0.6541,
+        "weighted_prevalence": 0.03078,
+        "weighted_mean_pred": 0.0242,
+        "weighted_o_e_ratio": 1.2719,
+        "weighted_auc": 0.77553,
+        "weighted_brier_skill": 0.00925,
+        "calibration": [
+          {
+            "pred": 0.0021,
+            "obs": 0.0,
+            "n": 278
+          },
+          {
+            "pred": 0.0035,
+            "obs": 0.0072,
+            "n": 278
+          },
+          {
+            "pred": 0.005,
+            "obs": 0.0108,
+            "n": 277
+          },
+          {
+            "pred": 0.0076,
+            "obs": 0.0216,
+            "n": 278
+          },
+          {
+            "pred": 0.011,
+            "obs": 0.0396,
+            "n": 278
+          },
+          {
+            "pred": 0.0162,
+            "obs": 0.0433,
+            "n": 277
+          },
+          {
+            "pred": 0.0245,
+            "obs": 0.0432,
+            "n": 278
+          },
+          {
+            "pred": 0.0376,
+            "obs": 0.0578,
+            "n": 277
+          },
+          {
+            "pred": 0.0636,
+            "obs": 0.1367,
+            "n": 278
+          },
+          {
+            "pred": 0.1486,
+            "obs": 0.1187,
+            "n": 278
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2017-20 25% stratified held-out",
+    "logreg": {
+      "n": 695,
+      "prevalence": 0.04748,
+      "mean_pred": 0.03785,
+      "o_e_ratio": 1.2546,
+      "auc": 0.76655,
+      "pr_auc": 0.17204,
+      "brier": 0.04383,
+      "brier_skill": 0.03087,
+      "capture_top10pct": 0.2727,
+      "capture_top30pct": 0.697,
+      "weighted_prevalence": 0.03217,
+      "weighted_mean_pred": 0.02782,
+      "weighted_o_e_ratio": 1.1566,
+      "weighted_auc": 0.76493,
+      "weighted_brier_skill": 0.01889,
+      "calibration": [
+        {
+          "pred": 0.0022,
+          "obs": 0.0,
+          "n": 70
+        },
+        {
+          "pred": 0.0042,
+          "obs": 0.0145,
+          "n": 69
+        },
+        {
+          "pred": 0.0071,
+          "obs": 0.0,
+          "n": 70
+        },
+        {
+          "pred": 0.0098,
+          "obs": 0.0145,
+          "n": 69
+        },
+        {
+          "pred": 0.0139,
+          "obs": 0.0286,
+          "n": 70
+        },
+        {
+          "pred": 0.0192,
+          "obs": 0.0435,
+          "n": 69
+        },
+        {
+          "pred": 0.0277,
+          "obs": 0.0435,
+          "n": 69
+        },
+        {
+          "pred": 0.0414,
+          "obs": 0.1,
+          "n": 70
+        },
+        {
+          "pred": 0.0674,
+          "obs": 0.1014,
+          "n": 69
+        },
+        {
+          "pred": 0.1846,
+          "obs": 0.1286,
+          "n": 70
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 695,
+      "prevalence": 0.04748,
+      "mean_pred": 0.03044,
+      "o_e_ratio": 1.5601,
+      "auc": 0.76005,
+      "pr_auc": 0.12241,
+      "brier": 0.0443,
+      "brier_skill": 0.02049,
+      "capture_top10pct": 0.2424,
+      "capture_top30pct": 0.697,
+      "weighted_prevalence": 0.03217,
+      "weighted_mean_pred": 0.02185,
+      "weighted_o_e_ratio": 1.4728,
+      "weighted_auc": 0.7365,
+      "weighted_brier_skill": 0.01026
+    },
+    "age_continuous_ranking": {
+      "n": 695,
+      "prevalence": 0.04748,
+      "mean_pred": 0.47898,
+      "o_e_ratio": 0.0991,
+      "auc": 0.67351,
+      "pr_auc": 0.07508,
+      "brier": 0.25233,
+      "brier_skill": -4.57905,
+      "capture_top10pct": 0.1515,
+      "capture_top30pct": 0.5455,
+      "weighted_prevalence": 0.03217,
+      "weighted_mean_pred": 0.46009,
+      "weighted_o_e_ratio": 0.0699,
+      "weighted_auc": 0.74131,
+      "weighted_brier_skill": -6.50457
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.6331,
+      "sensitivity": 0.8788,
+      "specificity": 0.3792,
+      "ppv": 0.0659,
+      "auc": 0.62897
+    },
+    "deployed_coefficients": {
+      "age": 0.5695,
+      "sex": -0.2154,
+      "whtr": 0.292,
+      "bmi": 0.3897,
+      "diastolic_bp": 0.3523,
+      "family_hx_diabetes": 0.2247,
+      "diagnosed_htn": 0.3479,
+      "high_chol": 0.0,
+      "cvd_history": 0.2174,
+      "current_smoker": 0.1163,
+      "sleep_hours": -0.0338,
+      "income_ratio": 0.0751,
+      "education": -0.3562
+    },
+    "sign_clamped_features": [
+      "high_chol"
+    ]
+  },
+  "nofamily__undiagnosed_dm": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 2777,
+        "prevalence": 0.04789,
+        "mean_pred": 0.03951,
+        "o_e_ratio": 1.2123,
+        "auc": 0.74399,
+        "pr_auc": 0.11703,
+        "brier": 0.04523,
+        "brier_skill": 0.00817,
+        "capture_top10pct": 0.2782,
+        "capture_top30pct": 0.6316,
+        "weighted_prevalence": 0.03078,
+        "weighted_mean_pred": 0.03047,
+        "weighted_o_e_ratio": 1.0099,
+        "weighted_auc": 0.78132,
+        "weighted_brier_skill": 0.02376,
+        "calibration": [
+          {
+            "pred": 0.0018,
+            "obs": 0.0036,
+            "n": 278
+          },
+          {
+            "pred": 0.0038,
+            "obs": 0.0072,
+            "n": 278
+          },
+          {
+            "pred": 0.0063,
+            "obs": 0.0108,
+            "n": 277
+          },
+          {
+            "pred": 0.0097,
+            "obs": 0.0216,
+            "n": 278
+          },
+          {
+            "pred": 0.014,
+            "obs": 0.0324,
+            "n": 278
+          },
+          {
+            "pred": 0.0198,
+            "obs": 0.0433,
+            "n": 277
+          },
+          {
+            "pred": 0.0303,
+            "obs": 0.0576,
+            "n": 278
+          },
+          {
+            "pred": 0.0456,
+            "obs": 0.083,
+            "n": 277
+          },
+          {
+            "pred": 0.0762,
+            "obs": 0.0863,
+            "n": 278
+          },
+          {
+            "pred": 0.1874,
+            "obs": 0.1331,
+            "n": 278
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 2777,
+        "prevalence": 0.04789,
+        "mean_pred": 0.03239,
+        "o_e_ratio": 1.4787,
+        "auc": 0.74454,
+        "pr_auc": 0.10803,
+        "brier": 0.04518,
+        "brier_skill": 0.00913,
+        "capture_top10pct": 0.2556,
+        "capture_top30pct": 0.6541,
+        "weighted_prevalence": 0.03078,
+        "weighted_mean_pred": 0.02433,
+        "weighted_o_e_ratio": 1.265,
+        "weighted_auc": 0.78066,
+        "weighted_brier_skill": 0.00634,
+        "calibration": [
+          {
+            "pred": 0.0021,
+            "obs": 0.0,
+            "n": 278
+          },
+          {
+            "pred": 0.0033,
+            "obs": 0.0108,
+            "n": 278
+          },
+          {
+            "pred": 0.005,
+            "obs": 0.0144,
+            "n": 277
+          },
+          {
+            "pred": 0.0074,
+            "obs": 0.0252,
+            "n": 278
+          },
+          {
+            "pred": 0.0108,
+            "obs": 0.0324,
+            "n": 278
+          },
+          {
+            "pred": 0.0158,
+            "obs": 0.0433,
+            "n": 277
+          },
+          {
+            "pred": 0.0244,
+            "obs": 0.0396,
+            "n": 278
+          },
+          {
+            "pred": 0.038,
+            "obs": 0.0686,
+            "n": 277
+          },
+          {
+            "pred": 0.0631,
+            "obs": 0.1223,
+            "n": 278
+          },
+          {
+            "pred": 0.1539,
+            "obs": 0.1223,
+            "n": 278
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2021-23 (temporal external, deployed model)",
+    "logreg": {
+      "n": 2218,
+      "prevalence": 0.03472,
+      "mean_pred": 0.03748,
+      "o_e_ratio": 0.9263,
+      "auc": 0.78194,
+      "pr_auc": 0.13303,
+      "brier": 0.03234,
+      "brier_skill": 0.035,
+      "capture_top10pct": 0.3766,
+      "capture_top30pct": 0.6753,
+      "weighted_prevalence": 0.02699,
+      "weighted_mean_pred": 0.03067,
+      "weighted_o_e_ratio": 0.8798,
+      "weighted_auc": 0.82369,
+      "weighted_brier_skill": 0.03538,
+      "calibration": [
+        {
+          "pred": 0.002,
+          "obs": 0.0,
+          "n": 222
+        },
+        {
+          "pred": 0.0041,
+          "obs": 0.009,
+          "n": 222
+        },
+        {
+          "pred": 0.0064,
+          "obs": 0.0,
+          "n": 222
+        },
+        {
+          "pred": 0.0095,
+          "obs": 0.0136,
+          "n": 221
+        },
+        {
+          "pred": 0.0138,
+          "obs": 0.009,
+          "n": 222
+        },
+        {
+          "pred": 0.0203,
+          "obs": 0.0405,
+          "n": 222
+        },
+        {
+          "pred": 0.0301,
+          "obs": 0.0407,
+          "n": 221
+        },
+        {
+          "pred": 0.044,
+          "obs": 0.0495,
+          "n": 222
+        },
+        {
+          "pred": 0.0703,
+          "obs": 0.0541,
+          "n": 222
+        },
+        {
+          "pred": 0.174,
+          "obs": 0.1306,
+          "n": 222
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 2218,
+      "prevalence": 0.03472,
+      "mean_pred": 0.02963,
+      "o_e_ratio": 1.1716,
+      "auc": 0.76165,
+      "pr_auc": 0.11933,
+      "brier": 0.03234,
+      "brier_skill": 0.03502,
+      "capture_top10pct": 0.3117,
+      "capture_top30pct": 0.6623,
+      "weighted_prevalence": 0.02699,
+      "weighted_mean_pred": 0.02415,
+      "weighted_o_e_ratio": 1.1174,
+      "weighted_auc": 0.80148,
+      "weighted_brier_skill": 0.03339
+    },
+    "age_continuous_ranking": {
+      "n": 2218,
+      "prevalence": 0.03472,
+      "mean_pred": 0.51669,
+      "o_e_ratio": 0.0672,
+      "auc": 0.6291,
+      "pr_auc": 0.05377,
+      "brier": 0.2911,
+      "brier_skill": -7.68685,
+      "capture_top10pct": 0.1948,
+      "capture_top30pct": 0.4545,
+      "weighted_prevalence": 0.02699,
+      "weighted_mean_pred": 0.45931,
+      "weighted_o_e_ratio": 0.0588,
+      "weighted_auc": 0.66795,
+      "weighted_brier_skill": -8.04168
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.6979,
+      "sensitivity": 0.8442,
+      "specificity": 0.3073,
+      "ppv": 0.042,
+      "auc": 0.57574
+    },
+    "deployed_coefficients": {
+      "age": 0.5602,
+      "sex": -0.188,
+      "whtr": 0.3035,
+      "bmi": 0.3885,
+      "diastolic_bp": 0.3573,
+      "diagnosed_htn": 0.3498,
+      "high_chol": 0.0,
+      "cvd_history": 0.2179,
+      "current_smoker": 0.1275,
+      "sleep_hours": -0.0581,
+      "income_ratio": 0.0699,
+      "education": -0.3593
+    },
+    "sign_clamped_features": [
+      "high_chol"
+    ]
+  },
+  "full__dysglycaemia": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 2777,
+        "prevalence": 0.61145,
+        "mean_pred": 0.62053,
+        "o_e_ratio": 0.9854,
+        "auc": 0.74654,
+        "pr_auc": 0.79514,
+        "brier": 0.19441,
+        "brier_skill": 0.18169,
+        "capture_top10pct": 0.1372,
+        "capture_top30pct": 0.4058,
+        "weighted_prevalence": 0.59388,
+        "weighted_mean_pred": 0.59195,
+        "weighted_o_e_ratio": 1.0033,
+        "weighted_auc": 0.74739,
+        "weighted_brier_skill": 0.18249,
+        "calibration": [
+          {
+            "pred": 0.2057,
+            "obs": 0.2302,
+            "n": 278
+          },
+          {
+            "pred": 0.3481,
+            "obs": 0.3273,
+            "n": 278
+          },
+          {
+            "pred": 0.4515,
+            "obs": 0.4585,
+            "n": 277
+          },
+          {
+            "pred": 0.5462,
+            "obs": 0.5468,
+            "n": 278
+          },
+          {
+            "pred": 0.6232,
+            "obs": 0.6439,
+            "n": 278
+          },
+          {
+            "pred": 0.6939,
+            "obs": 0.6643,
+            "n": 277
+          },
+          {
+            "pred": 0.7557,
+            "obs": 0.7626,
+            "n": 278
+          },
+          {
+            "pred": 0.8074,
+            "obs": 0.787,
+            "n": 277
+          },
+          {
+            "pred": 0.8591,
+            "obs": 0.8525,
+            "n": 278
+          },
+          {
+            "pred": 0.915,
+            "obs": 0.8417,
+            "n": 278
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 2777,
+        "prevalence": 0.61145,
+        "mean_pred": 0.617,
+        "o_e_ratio": 0.991,
+        "auc": 0.73293,
+        "pr_auc": 0.78865,
+        "brier": 0.20084,
+        "brier_skill": 0.15462,
+        "capture_top10pct": 0.1402,
+        "capture_top30pct": 0.3993,
+        "weighted_prevalence": 0.59388,
+        "weighted_mean_pred": 0.59135,
+        "weighted_o_e_ratio": 1.0043,
+        "weighted_auc": 0.73884,
+        "weighted_brier_skill": 0.16536,
+        "calibration": [
+          {
+            "pred": 0.17,
+            "obs": 0.223,
+            "n": 278
+          },
+          {
+            "pred": 0.319,
+            "obs": 0.3741,
+            "n": 278
+          },
+          {
+            "pred": 0.4435,
+            "obs": 0.5235,
+            "n": 277
+          },
+          {
+            "pred": 0.5425,
+            "obs": 0.5216,
+            "n": 278
+          },
+          {
+            "pred": 0.6338,
+            "obs": 0.5719,
+            "n": 278
+          },
+          {
+            "pred": 0.7066,
+            "obs": 0.6968,
+            "n": 277
+          },
+          {
+            "pred": 0.7637,
+            "obs": 0.7626,
+            "n": 278
+          },
+          {
+            "pred": 0.8157,
+            "obs": 0.7581,
+            "n": 277
+          },
+          {
+            "pred": 0.864,
+            "obs": 0.8237,
+            "n": 278
+          },
+          {
+            "pred": 0.9116,
+            "obs": 0.8597,
+            "n": 278
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2017-20 25% stratified held-out",
+    "logreg": {
+      "n": 695,
+      "prevalence": 0.61151,
+      "mean_pred": 0.60774,
+      "o_e_ratio": 1.0062,
+      "auc": 0.74379,
+      "pr_auc": 0.8063,
+      "brier": 0.19712,
+      "brier_skill": 0.17024,
+      "capture_top10pct": 0.1482,
+      "capture_top30pct": 0.4047,
+      "weighted_prevalence": 0.61414,
+      "weighted_mean_pred": 0.57935,
+      "weighted_o_e_ratio": 1.0601,
+      "weighted_auc": 0.72502,
+      "weighted_brier_skill": 0.14259,
+      "calibration": [
+        {
+          "pred": 0.1854,
+          "obs": 0.2,
+          "n": 70
+        },
+        {
+          "pred": 0.3181,
+          "obs": 0.4058,
+          "n": 69
+        },
+        {
+          "pred": 0.4277,
+          "obs": 0.5143,
+          "n": 70
+        },
+        {
+          "pred": 0.5279,
+          "obs": 0.4638,
+          "n": 69
+        },
+        {
+          "pred": 0.6128,
+          "obs": 0.5714,
+          "n": 70
+        },
+        {
+          "pred": 0.6888,
+          "obs": 0.7101,
+          "n": 69
+        },
+        {
+          "pred": 0.746,
+          "obs": 0.7826,
+          "n": 69
+        },
+        {
+          "pred": 0.8009,
+          "obs": 0.7429,
+          "n": 70
+        },
+        {
+          "pred": 0.8571,
+          "obs": 0.8116,
+          "n": 69
+        },
+        {
+          "pred": 0.914,
+          "obs": 0.9143,
+          "n": 70
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 695,
+      "prevalence": 0.61151,
+      "mean_pred": 0.59517,
+      "o_e_ratio": 1.0275,
+      "auc": 0.72607,
+      "pr_auc": 0.79659,
+      "brier": 0.20564,
+      "brier_skill": 0.13439,
+      "capture_top10pct": 0.1435,
+      "capture_top30pct": 0.4024,
+      "weighted_prevalence": 0.61414,
+      "weighted_mean_pred": 0.57171,
+      "weighted_o_e_ratio": 1.0742,
+      "weighted_auc": 0.72052,
+      "weighted_brier_skill": 0.12106
+    },
+    "age_continuous_ranking": {
+      "n": 695,
+      "prevalence": 0.61151,
+      "mean_pred": 0.47401,
+      "o_e_ratio": 1.2901,
+      "auc": 0.67311,
+      "pr_auc": 0.74222,
+      "brier": 0.23806,
+      "brier_skill": -0.00208,
+      "capture_top10pct": 0.1294,
+      "capture_top30pct": 0.3741,
+      "weighted_prevalence": 0.61414,
+      "weighted_mean_pred": 0.45097,
+      "weighted_o_e_ratio": 1.3618,
+      "weighted_auc": 0.64829,
+      "weighted_brier_skill": -0.06269
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.6072,
+      "sensitivity": 0.7106,
+      "specificity": 0.5556,
+      "ppv": 0.7156,
+      "auc": 0.63307
+    },
+    "deployed_coefficients": {
+      "age": 0.7374,
+      "sex": -0.4348,
+      "whtr": 0.1709,
+      "bmi": 0.3745,
+      "diastolic_bp": 0.1914,
+      "family_hx_diabetes": 0.0859,
+      "diagnosed_htn": 0.0177,
+      "high_chol": 0.0804,
+      "cvd_history": 0.0,
+      "current_smoker": 0.0159,
+      "sleep_hours": -0.031,
+      "income_ratio": -0.0113,
+      "education": -0.0891
+    },
+    "sign_clamped_features": [
+      "cvd_history"
+    ]
+  },
+  "nofamily__dysglycaemia": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 2777,
+        "prevalence": 0.61145,
+        "mean_pred": 0.62043,
+        "o_e_ratio": 0.9855,
+        "auc": 0.74626,
+        "pr_auc": 0.7956,
+        "brier": 0.19449,
+        "brier_skill": 0.18137,
+        "capture_top10pct": 0.1384,
+        "capture_top30pct": 0.4052,
+        "weighted_prevalence": 0.59388,
+        "weighted_mean_pred": 0.59146,
+        "weighted_o_e_ratio": 1.0041,
+        "weighted_auc": 0.74818,
+        "weighted_brier_skill": 0.18413,
+        "calibration": [
+          {
+            "pred": 0.2066,
+            "obs": 0.2266,
+            "n": 278
+          },
+          {
+            "pred": 0.3478,
+            "obs": 0.3237,
+            "n": 278
+          },
+          {
+            "pred": 0.4534,
+            "obs": 0.4838,
+            "n": 277
+          },
+          {
+            "pred": 0.5439,
+            "obs": 0.5252,
+            "n": 278
+          },
+          {
+            "pred": 0.6219,
+            "obs": 0.5971,
+            "n": 278
+          },
+          {
+            "pred": 0.6954,
+            "obs": 0.7076,
+            "n": 277
+          },
+          {
+            "pred": 0.7551,
+            "obs": 0.7734,
+            "n": 278
+          },
+          {
+            "pred": 0.8072,
+            "obs": 0.8051,
+            "n": 277
+          },
+          {
+            "pred": 0.8583,
+            "obs": 0.8237,
+            "n": 278
+          },
+          {
+            "pred": 0.915,
+            "obs": 0.8489,
+            "n": 278
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 2777,
+        "prevalence": 0.61145,
+        "mean_pred": 0.61712,
+        "o_e_ratio": 0.9908,
+        "auc": 0.72952,
+        "pr_auc": 0.79003,
+        "brier": 0.20217,
+        "brier_skill": 0.14904,
+        "capture_top10pct": 0.1431,
+        "capture_top30pct": 0.4005,
+        "weighted_prevalence": 0.59388,
+        "weighted_mean_pred": 0.5902,
+        "weighted_o_e_ratio": 1.0062,
+        "weighted_auc": 0.73398,
+        "weighted_brier_skill": 0.15706,
+        "calibration": [
+          {
+            "pred": 0.1688,
+            "obs": 0.2374,
+            "n": 278
+          },
+          {
+            "pred": 0.3177,
+            "obs": 0.3489,
+            "n": 278
+          },
+          {
+            "pred": 0.4447,
+            "obs": 0.5307,
+            "n": 277
+          },
+          {
+            "pred": 0.5473,
+            "obs": 0.5468,
+            "n": 278
+          },
+          {
+            "pred": 0.6319,
+            "obs": 0.5935,
+            "n": 278
+          },
+          {
+            "pred": 0.7047,
+            "obs": 0.6859,
+            "n": 277
+          },
+          {
+            "pred": 0.7621,
+            "obs": 0.723,
+            "n": 278
+          },
+          {
+            "pred": 0.816,
+            "obs": 0.7545,
+            "n": 277
+          },
+          {
+            "pred": 0.8662,
+            "obs": 0.8201,
+            "n": 278
+          },
+          {
+            "pred": 0.9124,
+            "obs": 0.8741,
+            "n": 278
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2021-23 (temporal external, deployed model)",
+    "logreg": {
+      "n": 2218,
+      "prevalence": 0.53787,
+      "mean_pred": 0.63549,
+      "o_e_ratio": 0.8464,
+      "auc": 0.73285,
+      "pr_auc": 0.73674,
+      "brier": 0.21718,
+      "brier_skill": 0.12625,
+      "capture_top10pct": 0.1517,
+      "capture_top30pct": 0.4216,
+      "weighted_prevalence": 0.49158,
+      "weighted_mean_pred": 0.5893,
+      "weighted_o_e_ratio": 0.8342,
+      "weighted_auc": 0.73643,
+      "weighted_brier_skill": 0.1259,
+      "calibration": [
+        {
+          "pred": 0.2241,
+          "obs": 0.1757,
+          "n": 222
+        },
+        {
+          "pred": 0.3635,
+          "obs": 0.2883,
+          "n": 222
+        },
+        {
+          "pred": 0.4753,
+          "obs": 0.3468,
+          "n": 222
+        },
+        {
+          "pred": 0.5676,
+          "obs": 0.457,
+          "n": 221
+        },
+        {
+          "pred": 0.6473,
+          "obs": 0.5856,
+          "n": 222
+        },
+        {
+          "pred": 0.7145,
+          "obs": 0.5991,
+          "n": 222
+        },
+        {
+          "pred": 0.7664,
+          "obs": 0.6561,
+          "n": 221
+        },
+        {
+          "pred": 0.8162,
+          "obs": 0.6802,
+          "n": 222
+        },
+        {
+          "pred": 0.8632,
+          "obs": 0.7703,
+          "n": 222
+        },
+        {
+          "pred": 0.9171,
+          "obs": 0.8198,
+          "n": 222
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 2218,
+      "prevalence": 0.53787,
+      "mean_pred": 0.63078,
+      "o_e_ratio": 0.8527,
+      "auc": 0.72369,
+      "pr_auc": 0.72916,
+      "brier": 0.22033,
+      "brier_skill": 0.11358,
+      "capture_top10pct": 0.1517,
+      "capture_top30pct": 0.4199,
+      "weighted_prevalence": 0.49158,
+      "weighted_mean_pred": 0.58548,
+      "weighted_o_e_ratio": 0.8396,
+      "weighted_auc": 0.72448,
+      "weighted_brier_skill": 0.10653
+    },
+    "age_continuous_ranking": {
+      "n": 2218,
+      "prevalence": 0.53787,
+      "mean_pred": 0.51669,
+      "o_e_ratio": 1.041,
+      "auc": 0.66347,
+      "pr_auc": 0.65855,
+      "brier": 0.23022,
+      "brier_skill": 0.07381,
+      "capture_top10pct": 0.1282,
+      "capture_top30pct": 0.3881,
+      "weighted_prevalence": 0.49158,
+      "weighted_mean_pred": 0.45931,
+      "weighted_o_e_ratio": 1.0703,
+      "weighted_auc": 0.67338,
+      "weighted_brier_skill": 0.08208
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.6979,
+      "sensitivity": 0.8064,
+      "specificity": 0.4283,
+      "ppv": 0.6214,
+      "auc": 0.61733
+    },
+    "deployed_coefficients": {
+      "age": 0.7387,
+      "sex": -0.4247,
+      "whtr": 0.1742,
+      "bmi": 0.3771,
+      "diastolic_bp": 0.1959,
+      "diagnosed_htn": 0.0186,
+      "high_chol": 0.0845,
+      "cvd_history": 0.0,
+      "current_smoker": 0.0234,
+      "sleep_hours": -0.0364,
+      "income_ratio": -0.0133,
+      "education": -0.0902
+    },
+    "sign_clamped_features": [
+      "cvd_history"
+    ]
+  },
+  "full__undiagnosed_htn": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 4603,
+        "prevalence": 0.335,
+        "mean_pred": 0.31483,
+        "o_e_ratio": 1.064,
+        "auc": 0.6986,
+        "pr_auc": 0.49474,
+        "brier": 0.20167,
+        "brier_skill": 0.09474,
+        "capture_top10pct": 0.1699,
+        "capture_top30pct": 0.4617,
+        "weighted_prevalence": 0.2925,
+        "weighted_mean_pred": 0.29387,
+        "weighted_o_e_ratio": 0.9953,
+        "weighted_auc": 0.70316,
+        "weighted_brier_skill": 0.09138,
+        "calibration": [
+          {
+            "pred": 0.0914,
+            "obs": 0.0738,
+            "n": 461
+          },
+          {
+            "pred": 0.1376,
+            "obs": 0.1609,
+            "n": 460
+          },
+          {
+            "pred": 0.178,
+            "obs": 0.2087,
+            "n": 460
+          },
+          {
+            "pred": 0.2192,
+            "obs": 0.2326,
+            "n": 460
+          },
+          {
+            "pred": 0.2625,
+            "obs": 0.3384,
+            "n": 461
+          },
+          {
+            "pred": 0.3107,
+            "obs": 0.387,
+            "n": 460
+          },
+          {
+            "pred": 0.3642,
+            "obs": 0.4022,
+            "n": 460
+          },
+          {
+            "pred": 0.4327,
+            "obs": 0.4674,
+            "n": 460
+          },
+          {
+            "pred": 0.5116,
+            "obs": 0.5087,
+            "n": 460
+          },
+          {
+            "pred": 0.6405,
+            "obs": 0.5705,
+            "n": 461
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 4603,
+        "prevalence": 0.335,
+        "mean_pred": 0.31037,
+        "o_e_ratio": 1.0794,
+        "auc": 0.68794,
+        "pr_auc": 0.48688,
+        "brier": 0.2043,
+        "brier_skill": 0.08292,
+        "capture_top10pct": 0.1634,
+        "capture_top30pct": 0.4475,
+        "weighted_prevalence": 0.2925,
+        "weighted_mean_pred": 0.29383,
+        "weighted_o_e_ratio": 0.9954,
+        "weighted_auc": 0.70097,
+        "weighted_brier_skill": 0.09081,
+        "calibration": [
+          {
+            "pred": 0.0574,
+            "obs": 0.0824,
+            "n": 461
+          },
+          {
+            "pred": 0.1038,
+            "obs": 0.1543,
+            "n": 460
+          },
+          {
+            "pred": 0.1509,
+            "obs": 0.2043,
+            "n": 460
+          },
+          {
+            "pred": 0.204,
+            "obs": 0.2783,
+            "n": 460
+          },
+          {
+            "pred": 0.2653,
+            "obs": 0.3275,
+            "n": 461
+          },
+          {
+            "pred": 0.3302,
+            "obs": 0.3913,
+            "n": 460
+          },
+          {
+            "pred": 0.3889,
+            "obs": 0.413,
+            "n": 460
+          },
+          {
+            "pred": 0.4515,
+            "obs": 0.4761,
+            "n": 460
+          },
+          {
+            "pred": 0.519,
+            "obs": 0.4739,
+            "n": 460
+          },
+          {
+            "pred": 0.6325,
+            "obs": 0.5488,
+            "n": 461
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2017-20 25% stratified held-out",
+    "logreg": {
+      "n": 1151,
+      "prevalence": 0.33536,
+      "mean_pred": 0.31074,
+      "o_e_ratio": 1.0792,
+      "auc": 0.70012,
+      "pr_auc": 0.49649,
+      "brier": 0.20191,
+      "brier_skill": 0.09415,
+      "capture_top10pct": 0.1788,
+      "capture_top30pct": 0.4611,
+      "weighted_prevalence": 0.30861,
+      "weighted_mean_pred": 0.29247,
+      "weighted_o_e_ratio": 1.0552,
+      "weighted_auc": 0.69695,
+      "weighted_brier_skill": 0.09122,
+      "calibration": [
+        {
+          "pred": 0.0857,
+          "obs": 0.0603,
+          "n": 116
+        },
+        {
+          "pred": 0.1311,
+          "obs": 0.1826,
+          "n": 115
+        },
+        {
+          "pred": 0.171,
+          "obs": 0.2087,
+          "n": 115
+        },
+        {
+          "pred": 0.211,
+          "obs": 0.2348,
+          "n": 115
+        },
+        {
+          "pred": 0.2548,
+          "obs": 0.3652,
+          "n": 115
+        },
+        {
+          "pred": 0.3063,
+          "obs": 0.3304,
+          "n": 115
+        },
+        {
+          "pred": 0.363,
+          "obs": 0.4261,
+          "n": 115
+        },
+        {
+          "pred": 0.4306,
+          "obs": 0.4435,
+          "n": 115
+        },
+        {
+          "pred": 0.5102,
+          "obs": 0.5043,
+          "n": 115
+        },
+        {
+          "pred": 0.6455,
+          "obs": 0.6,
+          "n": 115
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 1151,
+      "prevalence": 0.33536,
+      "mean_pred": 0.30132,
+      "o_e_ratio": 1.113,
+      "auc": 0.6735,
+      "pr_auc": 0.48582,
+      "brier": 0.20891,
+      "brier_skill": 0.06275,
+      "capture_top10pct": 0.1606,
+      "capture_top30pct": 0.4275,
+      "weighted_prevalence": 0.30861,
+      "weighted_mean_pred": 0.2833,
+      "weighted_o_e_ratio": 1.0894,
+      "weighted_auc": 0.67395,
+      "weighted_brier_skill": 0.0621
+    },
+    "age_continuous_ranking": {
+      "n": 1151,
+      "prevalence": 0.33536,
+      "mean_pred": 0.4533,
+      "o_e_ratio": 0.7398,
+      "auc": 0.67899,
+      "pr_auc": 0.49264,
+      "brier": 0.21859,
+      "brier_skill": 0.01932,
+      "capture_top10pct": 0.1684,
+      "capture_top30pct": 0.4404,
+      "weighted_prevalence": 0.30861,
+      "weighted_mean_pred": 0.43968,
+      "weighted_o_e_ratio": 0.7019,
+      "weighted_auc": 0.68353,
+      "weighted_brier_skill": 0.00222
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.583,
+      "sensitivity": 0.7746,
+      "specificity": 0.5137,
+      "ppv": 0.4456,
+      "auc": 0.64417
+    },
+    "deployed_coefficients": {
+      "age": 0.6446,
+      "sex": -0.2174,
+      "whtr": 0.18,
+      "bmi": 0.2459,
+      "family_hx_diabetes": 0.0,
+      "high_chol": 0.0,
+      "cvd_history": 0.0194,
+      "current_smoker": 0.0759,
+      "sleep_hours": 0.0542,
+      "income_ratio": 0.0054,
+      "education": -0.1446
+    },
+    "sign_clamped_features": [
+      "family_hx_diabetes",
+      "high_chol"
+    ]
+  },
+  "nofamily__undiagnosed_htn": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 4603,
+        "prevalence": 0.335,
+        "mean_pred": 0.31486,
+        "o_e_ratio": 1.064,
+        "auc": 0.69864,
+        "pr_auc": 0.49485,
+        "brier": 0.20165,
+        "brier_skill": 0.09482,
+        "capture_top10pct": 0.1699,
+        "capture_top30pct": 0.4611,
+        "weighted_prevalence": 0.2925,
+        "weighted_mean_pred": 0.29393,
+        "weighted_o_e_ratio": 0.9951,
+        "weighted_auc": 0.70314,
+        "weighted_brier_skill": 0.0914,
+        "calibration": [
+          {
+            "pred": 0.0916,
+            "obs": 0.0738,
+            "n": 461
+          },
+          {
+            "pred": 0.1378,
+            "obs": 0.1587,
+            "n": 460
+          },
+          {
+            "pred": 0.1781,
+            "obs": 0.213,
+            "n": 460
+          },
+          {
+            "pred": 0.2194,
+            "obs": 0.2304,
+            "n": 460
+          },
+          {
+            "pred": 0.2626,
+            "obs": 0.3362,
+            "n": 461
+          },
+          {
+            "pred": 0.3107,
+            "obs": 0.3848,
+            "n": 460
+          },
+          {
+            "pred": 0.3641,
+            "obs": 0.4065,
+            "n": 460
+          },
+          {
+            "pred": 0.4326,
+            "obs": 0.4674,
+            "n": 460
+          },
+          {
+            "pred": 0.5114,
+            "obs": 0.5087,
+            "n": 460
+          },
+          {
+            "pred": 0.6402,
+            "obs": 0.5705,
+            "n": 461
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 4603,
+        "prevalence": 0.335,
+        "mean_pred": 0.31089,
+        "o_e_ratio": 1.0776,
+        "auc": 0.68717,
+        "pr_auc": 0.48944,
+        "brier": 0.20441,
+        "brier_skill": 0.08243,
+        "capture_top10pct": 0.166,
+        "capture_top30pct": 0.4449,
+        "weighted_prevalence": 0.2925,
+        "weighted_mean_pred": 0.29432,
+        "weighted_o_e_ratio": 0.9938,
+        "weighted_auc": 0.70036,
+        "weighted_brier_skill": 0.0906,
+        "calibration": [
+          {
+            "pred": 0.0581,
+            "obs": 0.0954,
+            "n": 461
+          },
+          {
+            "pred": 0.1046,
+            "obs": 0.1348,
+            "n": 460
+          },
+          {
+            "pred": 0.1511,
+            "obs": 0.2217,
+            "n": 460
+          },
+          {
+            "pred": 0.2044,
+            "obs": 0.2565,
+            "n": 460
+          },
+          {
+            "pred": 0.2663,
+            "obs": 0.3471,
+            "n": 461
+          },
+          {
+            "pred": 0.3292,
+            "obs": 0.3761,
+            "n": 460
+          },
+          {
+            "pred": 0.3911,
+            "obs": 0.4261,
+            "n": 460
+          },
+          {
+            "pred": 0.4498,
+            "obs": 0.463,
+            "n": 460
+          },
+          {
+            "pred": 0.5203,
+            "obs": 0.4717,
+            "n": 460
+          },
+          {
+            "pred": 0.6339,
+            "obs": 0.5575,
+            "n": 461
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2021-23 (temporal external, deployed model)",
+    "logreg": {
+      "n": 3592,
+      "prevalence": 0.31682,
+      "mean_pred": 0.32598,
+      "o_e_ratio": 0.9719,
+      "auc": 0.67242,
+      "pr_auc": 0.42984,
+      "brier": 0.20376,
+      "brier_skill": 0.0586,
+      "capture_top10pct": 0.138,
+      "capture_top30pct": 0.4332,
+      "weighted_prevalence": 0.29192,
+      "weighted_mean_pred": 0.29397,
+      "weighted_o_e_ratio": 0.993,
+      "weighted_auc": 0.69197,
+      "weighted_brier_skill": 0.07327,
+      "calibration": [
+        {
+          "pred": 0.0961,
+          "obs": 0.0806,
+          "n": 360
+        },
+        {
+          "pred": 0.1453,
+          "obs": 0.156,
+          "n": 359
+        },
+        {
+          "pred": 0.1885,
+          "obs": 0.1978,
+          "n": 359
+        },
+        {
+          "pred": 0.2318,
+          "obs": 0.2396,
+          "n": 359
+        },
+        {
+          "pred": 0.2798,
+          "obs": 0.3036,
+          "n": 359
+        },
+        {
+          "pred": 0.3341,
+          "obs": 0.4011,
+          "n": 359
+        },
+        {
+          "pred": 0.3857,
+          "obs": 0.4178,
+          "n": 359
+        },
+        {
+          "pred": 0.4433,
+          "obs": 0.454,
+          "n": 359
+        },
+        {
+          "pred": 0.5161,
+          "obs": 0.4819,
+          "n": 359
+        },
+        {
+          "pred": 0.6389,
+          "obs": 0.4361,
+          "n": 360
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 3592,
+      "prevalence": 0.31682,
+      "mean_pred": 0.31642,
+      "o_e_ratio": 1.0013,
+      "auc": 0.66242,
+      "pr_auc": 0.43732,
+      "brier": 0.20467,
+      "brier_skill": 0.0544,
+      "capture_top10pct": 0.1547,
+      "capture_top30pct": 0.4227,
+      "weighted_prevalence": 0.29192,
+      "weighted_mean_pred": 0.28947,
+      "weighted_o_e_ratio": 1.0085,
+      "weighted_auc": 0.68957,
+      "weighted_brier_skill": 0.07808
+    },
+    "age_continuous_ranking": {
+      "n": 3592,
+      "prevalence": 0.31682,
+      "mean_pred": 0.48833,
+      "o_e_ratio": 0.6488,
+      "auc": 0.62018,
+      "pr_auc": 0.39654,
+      "brier": 0.24443,
+      "brier_skill": -0.12932,
+      "capture_top10pct": 0.138,
+      "capture_top30pct": 0.3884,
+      "weighted_prevalence": 0.29192,
+      "weighted_mean_pred": 0.4425,
+      "weighted_o_e_ratio": 0.6597,
+      "weighted_auc": 0.62617,
+      "weighted_brier_skill": -0.10006
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.64,
+      "sensitivity": 0.761,
+      "specificity": 0.4161,
+      "ppv": 0.3767,
+      "auc": 0.58852
+    },
+    "deployed_coefficients": {
+      "age": 0.6445,
+      "sex": -0.2186,
+      "whtr": 0.1791,
+      "bmi": 0.2455,
+      "high_chol": 0.0,
+      "cvd_history": 0.0189,
+      "current_smoker": 0.0759,
+      "sleep_hours": 0.0545,
+      "income_ratio": 0.005,
+      "education": -0.1442
+    },
+    "sign_clamped_features": [
+      "high_chol"
+    ]
+  },
+  "full__undiagnosed_dyslipidaemia": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 4951,
+        "prevalence": 0.33266,
+        "mean_pred": 0.34486,
+        "o_e_ratio": 0.9646,
+        "auc": 0.67149,
+        "pr_auc": 0.47641,
+        "brier": 0.2063,
+        "brier_skill": 0.07072,
+        "capture_top10pct": 0.1633,
+        "capture_top30pct": 0.4475,
+        "weighted_prevalence": 0.32504,
+        "weighted_mean_pred": 0.32485,
+        "weighted_o_e_ratio": 1.0006,
+        "weighted_auc": 0.68019,
+        "weighted_brier_skill": 0.08303,
+        "calibration": [
+          {
+            "pred": 0.1484,
+            "obs": 0.1169,
+            "n": 496
+          },
+          {
+            "pred": 0.1912,
+            "obs": 0.1818,
+            "n": 495
+          },
+          {
+            "pred": 0.2285,
+            "obs": 0.2242,
+            "n": 495
+          },
+          {
+            "pred": 0.2641,
+            "obs": 0.2828,
+            "n": 495
+          },
+          {
+            "pred": 0.3013,
+            "obs": 0.2949,
+            "n": 495
+          },
+          {
+            "pred": 0.338,
+            "obs": 0.3697,
+            "n": 495
+          },
+          {
+            "pred": 0.3803,
+            "obs": 0.3677,
+            "n": 495
+          },
+          {
+            "pred": 0.433,
+            "obs": 0.4323,
+            "n": 495
+          },
+          {
+            "pred": 0.5071,
+            "obs": 0.5131,
+            "n": 495
+          },
+          {
+            "pred": 0.6571,
+            "obs": 0.5434,
+            "n": 495
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 4951,
+        "prevalence": 0.33266,
+        "mean_pred": 0.34069,
+        "o_e_ratio": 0.9764,
+        "auc": 0.66097,
+        "pr_auc": 0.45599,
+        "brier": 0.20945,
+        "brier_skill": 0.0565,
+        "capture_top10pct": 0.1518,
+        "capture_top30pct": 0.4262,
+        "weighted_prevalence": 0.32504,
+        "weighted_mean_pred": 0.32162,
+        "weighted_o_e_ratio": 1.0106,
+        "weighted_auc": 0.6647,
+        "weighted_brier_skill": 0.05861,
+        "calibration": [
+          {
+            "pred": 0.0737,
+            "obs": 0.0948,
+            "n": 496
+          },
+          {
+            "pred": 0.1363,
+            "obs": 0.1879,
+            "n": 495
+          },
+          {
+            "pred": 0.1998,
+            "obs": 0.2545,
+            "n": 495
+          },
+          {
+            "pred": 0.2547,
+            "obs": 0.2626,
+            "n": 495
+          },
+          {
+            "pred": 0.3107,
+            "obs": 0.3394,
+            "n": 495
+          },
+          {
+            "pred": 0.3619,
+            "obs": 0.3798,
+            "n": 495
+          },
+          {
+            "pred": 0.4149,
+            "obs": 0.3899,
+            "n": 495
+          },
+          {
+            "pred": 0.4723,
+            "obs": 0.4263,
+            "n": 495
+          },
+          {
+            "pred": 0.5418,
+            "obs": 0.4869,
+            "n": 495
+          },
+          {
+            "pred": 0.6412,
+            "obs": 0.5051,
+            "n": 495
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2017-20 25% stratified held-out",
+    "logreg": {
+      "n": 1238,
+      "prevalence": 0.33279,
+      "mean_pred": 0.34798,
+      "o_e_ratio": 0.9564,
+      "auc": 0.65737,
+      "pr_auc": 0.46759,
+      "brier": 0.21016,
+      "brier_skill": 0.05353,
+      "capture_top10pct": 0.165,
+      "capture_top30pct": 0.4417,
+      "weighted_prevalence": 0.33947,
+      "weighted_mean_pred": 0.32791,
+      "weighted_o_e_ratio": 1.0353,
+      "weighted_auc": 0.66992,
+      "weighted_brier_skill": 0.07479,
+      "calibration": [
+        {
+          "pred": 0.1465,
+          "obs": 0.1048,
+          "n": 124
+        },
+        {
+          "pred": 0.1877,
+          "obs": 0.2419,
+          "n": 124
+        },
+        {
+          "pred": 0.2254,
+          "obs": 0.2742,
+          "n": 124
+        },
+        {
+          "pred": 0.2581,
+          "obs": 0.252,
+          "n": 123
+        },
+        {
+          "pred": 0.2967,
+          "obs": 0.2661,
+          "n": 124
+        },
+        {
+          "pred": 0.3379,
+          "obs": 0.3306,
+          "n": 124
+        },
+        {
+          "pred": 0.3812,
+          "obs": 0.3902,
+          "n": 123
+        },
+        {
+          "pred": 0.4401,
+          "obs": 0.4274,
+          "n": 124
+        },
+        {
+          "pred": 0.5214,
+          "obs": 0.4839,
+          "n": 124
+        },
+        {
+          "pred": 0.6843,
+          "obs": 0.5565,
+          "n": 124
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 1238,
+      "prevalence": 0.33279,
+      "mean_pred": 0.34135,
+      "o_e_ratio": 0.9749,
+      "auc": 0.64755,
+      "pr_auc": 0.45663,
+      "brier": 0.21352,
+      "brier_skill": 0.03837,
+      "capture_top10pct": 0.165,
+      "capture_top30pct": 0.4078,
+      "weighted_prevalence": 0.33947,
+      "weighted_mean_pred": 0.32681,
+      "weighted_o_e_ratio": 1.0387,
+      "weighted_auc": 0.65792,
+      "weighted_brier_skill": 0.05601
+    },
+    "age_continuous_ranking": {
+      "n": 1238,
+      "prevalence": 0.33279,
+      "mean_pred": 0.46234,
+      "o_e_ratio": 0.7198,
+      "auc": 0.49197,
+      "pr_auc": 0.31363,
+      "brier": 0.27152,
+      "brier_skill": -0.22283,
+      "capture_top10pct": 0.0583,
+      "capture_top30pct": 0.2961,
+      "weighted_prevalence": 0.33947,
+      "weighted_mean_pred": 0.43114,
+      "weighted_o_e_ratio": 0.7874,
+      "weighted_auc": 0.46082,
+      "weighted_brier_skill": -0.20455
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.6018,
+      "sensitivity": 0.6044,
+      "specificity": 0.3995,
+      "ppv": 0.3342,
+      "auc": 0.50194
+    },
+    "deployed_coefficients": {
+      "sex": 0.1244,
+      "whtr": 0.3772,
+      "bmi": 0.2217,
+      "diastolic_bp": 0.0222,
+      "family_hx_diabetes": 0.0337,
+      "diagnosed_htn": 0.0147,
+      "cvd_history": 0.0,
+      "current_smoker": 0.1331,
+      "sleep_hours": 0.0209,
+      "income_ratio": -0.0681,
+      "education": -0.2224
+    },
+    "sign_clamped_features": [
+      "cvd_history"
+    ]
+  },
+  "nofamily__undiagnosed_dyslipidaemia": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 4951,
+        "prevalence": 0.33266,
+        "mean_pred": 0.34457,
+        "o_e_ratio": 0.9654,
+        "auc": 0.67184,
+        "pr_auc": 0.4771,
+        "brier": 0.20623,
+        "brier_skill": 0.07104,
+        "capture_top10pct": 0.1639,
+        "capture_top30pct": 0.4444,
+        "weighted_prevalence": 0.32504,
+        "weighted_mean_pred": 0.32481,
+        "weighted_o_e_ratio": 1.0007,
+        "weighted_auc": 0.68088,
+        "weighted_brier_skill": 0.08321,
+        "calibration": [
+          {
+            "pred": 0.1486,
+            "obs": 0.1149,
+            "n": 496
+          },
+          {
+            "pred": 0.1913,
+            "obs": 0.1818,
+            "n": 495
+          },
+          {
+            "pred": 0.2284,
+            "obs": 0.2404,
+            "n": 495
+          },
+          {
+            "pred": 0.2638,
+            "obs": 0.2606,
+            "n": 495
+          },
+          {
+            "pred": 0.3015,
+            "obs": 0.2889,
+            "n": 495
+          },
+          {
+            "pred": 0.3375,
+            "obs": 0.3879,
+            "n": 495
+          },
+          {
+            "pred": 0.3797,
+            "obs": 0.3737,
+            "n": 495
+          },
+          {
+            "pred": 0.432,
+            "obs": 0.4283,
+            "n": 495
+          },
+          {
+            "pred": 0.5065,
+            "obs": 0.5051,
+            "n": 495
+          },
+          {
+            "pred": 0.6567,
+            "obs": 0.5455,
+            "n": 495
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 4951,
+        "prevalence": 0.33266,
+        "mean_pred": 0.34063,
+        "o_e_ratio": 0.9766,
+        "auc": 0.65908,
+        "pr_auc": 0.45764,
+        "brier": 0.20975,
+        "brier_skill": 0.05516,
+        "capture_top10pct": 0.1542,
+        "capture_top30pct": 0.4165,
+        "weighted_prevalence": 0.32504,
+        "weighted_mean_pred": 0.32178,
+        "weighted_o_e_ratio": 1.0101,
+        "weighted_auc": 0.6655,
+        "weighted_brier_skill": 0.06167,
+        "calibration": [
+          {
+            "pred": 0.0751,
+            "obs": 0.0907,
+            "n": 496
+          },
+          {
+            "pred": 0.1381,
+            "obs": 0.2121,
+            "n": 495
+          },
+          {
+            "pred": 0.1999,
+            "obs": 0.2162,
+            "n": 495
+          },
+          {
+            "pred": 0.2552,
+            "obs": 0.2929,
+            "n": 495
+          },
+          {
+            "pred": 0.309,
+            "obs": 0.3475,
+            "n": 495
+          },
+          {
+            "pred": 0.3614,
+            "obs": 0.3475,
+            "n": 495
+          },
+          {
+            "pred": 0.4133,
+            "obs": 0.4343,
+            "n": 495
+          },
+          {
+            "pred": 0.4733,
+            "obs": 0.402,
+            "n": 495
+          },
+          {
+            "pred": 0.54,
+            "obs": 0.4707,
+            "n": 495
+          },
+          {
+            "pred": 0.6414,
+            "obs": 0.5131,
+            "n": 495
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2021-23 (temporal external, deployed model)",
+    "logreg": {
+      "n": 3161,
+      "prevalence": 0.30908,
+      "mean_pred": 0.32225,
+      "o_e_ratio": 0.9591,
+      "auc": 0.68629,
+      "pr_auc": 0.46268,
+      "brier": 0.1965,
+      "brier_skill": 0.07983,
+      "capture_top10pct": 0.1648,
+      "capture_top30pct": 0.4555,
+      "weighted_prevalence": 0.31406,
+      "weighted_mean_pred": 0.31423,
+      "weighted_o_e_ratio": 0.9994,
+      "weighted_auc": 0.68663,
+      "weighted_brier_skill": 0.08032,
+      "calibration": [
+        {
+          "pred": 0.1406,
+          "obs": 0.0946,
+          "n": 317
+        },
+        {
+          "pred": 0.1788,
+          "obs": 0.1614,
+          "n": 316
+        },
+        {
+          "pred": 0.2112,
+          "obs": 0.1582,
+          "n": 316
+        },
+        {
+          "pred": 0.2421,
+          "obs": 0.2405,
+          "n": 316
+        },
+        {
+          "pred": 0.2761,
+          "obs": 0.2563,
+          "n": 316
+        },
+        {
+          "pred": 0.3134,
+          "obs": 0.3639,
+          "n": 316
+        },
+        {
+          "pred": 0.3547,
+          "obs": 0.4082,
+          "n": 316
+        },
+        {
+          "pred": 0.4064,
+          "obs": 0.4177,
+          "n": 316
+        },
+        {
+          "pred": 0.4787,
+          "obs": 0.481,
+          "n": 316
+        },
+        {
+          "pred": 0.621,
+          "obs": 0.5095,
+          "n": 316
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 3161,
+      "prevalence": 0.30908,
+      "mean_pred": 0.31934,
+      "o_e_ratio": 0.9679,
+      "auc": 0.67334,
+      "pr_auc": 0.45701,
+      "brier": 0.19844,
+      "brier_skill": 0.07075,
+      "capture_top10pct": 0.1638,
+      "capture_top30pct": 0.4442,
+      "weighted_prevalence": 0.31406,
+      "weighted_mean_pred": 0.31181,
+      "weighted_o_e_ratio": 1.0072,
+      "weighted_auc": 0.67439,
+      "weighted_brier_skill": 0.07214
+    },
+    "age_continuous_ranking": {
+      "n": 3161,
+      "prevalence": 0.30908,
+      "mean_pred": 0.48512,
+      "o_e_ratio": 0.6371,
+      "auc": 0.48339,
+      "pr_auc": 0.29005,
+      "brier": 0.27947,
+      "brier_skill": -0.3087,
+      "capture_top10pct": 0.0747,
+      "capture_top30pct": 0.261,
+      "weighted_prevalence": 0.31406,
+      "weighted_mean_pred": 0.43801,
+      "weighted_o_e_ratio": 0.717,
+      "weighted_auc": 0.50703,
+      "weighted_brier_skill": -0.20155
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.628,
+      "sensitivity": 0.6182,
+      "specificity": 0.3677,
+      "ppv": 0.3043,
+      "auc": 0.49295
+    },
+    "deployed_coefficients": {
+      "sex": 0.1256,
+      "whtr": 0.3808,
+      "bmi": 0.2218,
+      "diastolic_bp": 0.0229,
+      "diagnosed_htn": 0.0163,
+      "cvd_history": 0.0,
+      "current_smoker": 0.1337,
+      "sleep_hours": 0.0204,
+      "income_ratio": -0.0684,
+      "education": -0.223
+    },
+    "sign_clamped_features": [
+      "cvd_history"
+    ]
+  },
+  "full__ckd_risk": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 9130,
+        "prevalence": 0.04195,
+        "mean_pred": 0.039,
+        "o_e_ratio": 1.0757,
+        "auc": 0.76982,
+        "pr_auc": 0.13749,
+        "brier": 0.03822,
+        "brier_skill": 0.04896,
+        "capture_top10pct": 0.376,
+        "capture_top30pct": 0.705,
+        "weighted_prevalence": 0.0324,
+        "weighted_mean_pred": 0.03217,
+        "weighted_o_e_ratio": 1.0074,
+        "weighted_auc": 0.71463,
+        "weighted_brier_skill": 0.03191,
+        "calibration": [
+          {
+            "pred": 0.008,
+            "obs": 0.0099,
+            "n": 913
+          },
+          {
+            "pred": 0.0109,
+            "obs": 0.0088,
+            "n": 913
+          },
+          {
+            "pred": 0.0136,
+            "obs": 0.012,
+            "n": 913
+          },
+          {
+            "pred": 0.0167,
+            "obs": 0.012,
+            "n": 913
+          },
+          {
+            "pred": 0.0208,
+            "obs": 0.0208,
+            "n": 913
+          },
+          {
+            "pred": 0.0268,
+            "obs": 0.0241,
+            "n": 913
+          },
+          {
+            "pred": 0.0353,
+            "obs": 0.0361,
+            "n": 913
+          },
+          {
+            "pred": 0.0479,
+            "obs": 0.0602,
+            "n": 913
+          },
+          {
+            "pred": 0.0691,
+            "obs": 0.0778,
+            "n": 913
+          },
+          {
+            "pred": 0.141,
+            "obs": 0.1577,
+            "n": 913
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 9130,
+        "prevalence": 0.04195,
+        "mean_pred": 0.03769,
+        "o_e_ratio": 1.1129,
+        "auc": 0.75013,
+        "pr_auc": 0.11104,
+        "brier": 0.03921,
+        "brier_skill": 0.0245,
+        "capture_top10pct": 0.3238,
+        "capture_top30pct": 0.6841,
+        "weighted_prevalence": 0.0324,
+        "weighted_mean_pred": 0.02858,
+        "weighted_o_e_ratio": 1.134,
+        "weighted_auc": 0.70548,
+        "weighted_brier_skill": 0.00983,
+        "calibration": [
+          {
+            "pred": 0.0036,
+            "obs": 0.0077,
+            "n": 913
+          },
+          {
+            "pred": 0.0056,
+            "obs": 0.0088,
+            "n": 913
+          },
+          {
+            "pred": 0.0077,
+            "obs": 0.0142,
+            "n": 913
+          },
+          {
+            "pred": 0.0105,
+            "obs": 0.0175,
+            "n": 913
+          },
+          {
+            "pred": 0.0142,
+            "obs": 0.0263,
+            "n": 913
+          },
+          {
+            "pred": 0.0198,
+            "obs": 0.0285,
+            "n": 913
+          },
+          {
+            "pred": 0.0289,
+            "obs": 0.0296,
+            "n": 913
+          },
+          {
+            "pred": 0.0438,
+            "obs": 0.0657,
+            "n": 913
+          },
+          {
+            "pred": 0.0723,
+            "obs": 0.0854,
+            "n": 913
+          },
+          {
+            "pred": 0.1706,
+            "obs": 0.1358,
+            "n": 913
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2017-20 25% stratified held-out",
+    "logreg": {
+      "n": 2283,
+      "prevalence": 0.04205,
+      "mean_pred": 0.0402,
+      "o_e_ratio": 1.046,
+      "auc": 0.75897,
+      "pr_auc": 0.10622,
+      "brier": 0.03927,
+      "brier_skill": 0.02521,
+      "capture_top10pct": 0.2917,
+      "capture_top30pct": 0.6771,
+      "weighted_prevalence": 0.03227,
+      "weighted_mean_pred": 0.03258,
+      "weighted_o_e_ratio": 0.9904,
+      "weighted_auc": 0.67391,
+      "weighted_brier_skill": -0.00561,
+      "calibration": [
+        {
+          "pred": 0.0074,
+          "obs": 0.0087,
+          "n": 229
+        },
+        {
+          "pred": 0.0104,
+          "obs": 0.0044,
+          "n": 228
+        },
+        {
+          "pred": 0.0128,
+          "obs": 0.0044,
+          "n": 228
+        },
+        {
+          "pred": 0.0158,
+          "obs": 0.0219,
+          "n": 228
+        },
+        {
+          "pred": 0.0194,
+          "obs": 0.0175,
+          "n": 229
+        },
+        {
+          "pred": 0.0246,
+          "obs": 0.0351,
+          "n": 228
+        },
+        {
+          "pred": 0.0327,
+          "obs": 0.0439,
+          "n": 228
+        },
+        {
+          "pred": 0.0453,
+          "obs": 0.0614,
+          "n": 228
+        },
+        {
+          "pred": 0.0671,
+          "obs": 0.1009,
+          "n": 228
+        },
+        {
+          "pred": 0.1662,
+          "obs": 0.1223,
+          "n": 229
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 2283,
+      "prevalence": 0.04205,
+      "mean_pred": 0.03758,
+      "o_e_ratio": 1.1189,
+      "auc": 0.74429,
+      "pr_auc": 0.10707,
+      "brier": 0.03993,
+      "brier_skill": 0.00883,
+      "capture_top10pct": 0.3021,
+      "capture_top30pct": 0.6562,
+      "weighted_prevalence": 0.03227,
+      "weighted_mean_pred": 0.02876,
+      "weighted_o_e_ratio": 1.1217,
+      "weighted_auc": 0.69975,
+      "weighted_brier_skill": -0.02466
+    },
+    "age_continuous_ranking": {
+      "n": 2283,
+      "prevalence": 0.04205,
+      "mean_pred": 0.51403,
+      "o_e_ratio": 0.0818,
+      "auc": 0.72166,
+      "pr_auc": 0.09124,
+      "brier": 0.28316,
+      "brier_skill": -6.0295,
+      "capture_top10pct": 0.2917,
+      "capture_top30pct": 0.6146,
+      "weighted_prevalence": 0.03227,
+      "weighted_mean_pred": 0.48672,
+      "weighted_o_e_ratio": 0.0663,
+      "weighted_auc": 0.65465,
+      "weighted_brier_skill": -7.3967
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.7061,
+      "sensitivity": 0.9062,
+      "specificity": 0.3027,
+      "ppv": 0.054,
+      "auc": 0.60447
+    },
+    "deployed_coefficients": {
+      "age": 0.2948,
+      "sex": -0.0731,
+      "whtr": 0.1033,
+      "diastolic_bp": 0.0,
+      "family_hx_diabetes": 0.1068,
+      "diagnosed_htn": 0.3202,
+      "high_chol": 0.151,
+      "cvd_history": 0.3305,
+      "sleep_hours": -0.0905,
+      "income_ratio": -0.1731,
+      "education": -0.0407
+    },
+    "sign_clamped_features": [
+      "diastolic_bp"
+    ]
+  },
+  "nofamily__ckd_risk": {
+    "cv_2017_2020": {
+      "logreg": {
+        "n": 9130,
+        "prevalence": 0.04195,
+        "mean_pred": 0.03884,
+        "o_e_ratio": 1.0802,
+        "auc": 0.76531,
+        "pr_auc": 0.1312,
+        "brier": 0.03831,
+        "brier_skill": 0.04682,
+        "capture_top10pct": 0.3786,
+        "capture_top30pct": 0.6789,
+        "weighted_prevalence": 0.0324,
+        "weighted_mean_pred": 0.03216,
+        "weighted_o_e_ratio": 1.0077,
+        "weighted_auc": 0.71298,
+        "weighted_brier_skill": 0.03153,
+        "calibration": [
+          {
+            "pred": 0.0082,
+            "obs": 0.0088,
+            "n": 913
+          },
+          {
+            "pred": 0.011,
+            "obs": 0.0131,
+            "n": 913
+          },
+          {
+            "pred": 0.0135,
+            "obs": 0.0044,
+            "n": 913
+          },
+          {
+            "pred": 0.0166,
+            "obs": 0.0164,
+            "n": 913
+          },
+          {
+            "pred": 0.0209,
+            "obs": 0.0219,
+            "n": 913
+          },
+          {
+            "pred": 0.0267,
+            "obs": 0.0252,
+            "n": 913
+          },
+          {
+            "pred": 0.0351,
+            "obs": 0.0449,
+            "n": 913
+          },
+          {
+            "pred": 0.0476,
+            "obs": 0.0504,
+            "n": 913
+          },
+          {
+            "pred": 0.0683,
+            "obs": 0.0756,
+            "n": 913
+          },
+          {
+            "pred": 0.1403,
+            "obs": 0.1588,
+            "n": 913
+          }
+        ]
+      },
+      "lightgbm": {
+        "n": 9130,
+        "prevalence": 0.04195,
+        "mean_pred": 0.03748,
+        "o_e_ratio": 1.1194,
+        "auc": 0.74409,
+        "pr_auc": 0.10658,
+        "brier": 0.03936,
+        "brier_skill": 0.02057,
+        "capture_top10pct": 0.3185,
+        "capture_top30pct": 0.6684,
+        "weighted_prevalence": 0.0324,
+        "weighted_mean_pred": 0.02865,
+        "weighted_o_e_ratio": 1.1312,
+        "weighted_auc": 0.70117,
+        "weighted_brier_skill": 0.00745,
+        "calibration": [
+          {
+            "pred": 0.0037,
+            "obs": 0.0099,
+            "n": 913
+          },
+          {
+            "pred": 0.0057,
+            "obs": 0.0088,
+            "n": 913
+          },
+          {
+            "pred": 0.0079,
+            "obs": 0.0131,
+            "n": 913
+          },
+          {
+            "pred": 0.0105,
+            "obs": 0.0208,
+            "n": 913
+          },
+          {
+            "pred": 0.0143,
+            "obs": 0.023,
+            "n": 913
+          },
+          {
+            "pred": 0.02,
+            "obs": 0.0274,
+            "n": 913
+          },
+          {
+            "pred": 0.029,
+            "obs": 0.0361,
+            "n": 913
+          },
+          {
+            "pred": 0.0438,
+            "obs": 0.0581,
+            "n": 913
+          },
+          {
+            "pred": 0.0714,
+            "obs": 0.0887,
+            "n": 913
+          },
+          {
+            "pred": 0.1684,
+            "obs": 0.1336,
+            "n": 913
+          }
+        ]
+      }
+    },
+    "selected": "logreg",
+    "selection_rule": "logreg deployed for exact attribution + calibration stability; lightgbm kept as benchmark",
+    "eval_set": "NHANES 2021-23 (temporal external, deployed model)",
+    "logreg": {
+      "n": 7753,
+      "prevalence": 0.0414,
+      "mean_pred": 0.03842,
+      "o_e_ratio": 1.0776,
+      "auc": 0.77671,
+      "pr_auc": 0.12659,
+      "brier": 0.03788,
+      "brier_skill": 0.04555,
+      "capture_top10pct": 0.3333,
+      "capture_top30pct": 0.729,
+      "weighted_prevalence": 0.02954,
+      "weighted_mean_pred": 0.03244,
+      "weighted_o_e_ratio": 0.9106,
+      "weighted_auc": 0.78539,
+      "weighted_brier_skill": 0.04404,
+      "calibration": [
+        {
+          "pred": 0.0086,
+          "obs": 0.009,
+          "n": 777
+        },
+        {
+          "pred": 0.0114,
+          "obs": 0.0078,
+          "n": 774
+        },
+        {
+          "pred": 0.0139,
+          "obs": 0.009,
+          "n": 775
+        },
+        {
+          "pred": 0.0169,
+          "obs": 0.0077,
+          "n": 775
+        },
+        {
+          "pred": 0.0208,
+          "obs": 0.0193,
+          "n": 776
+        },
+        {
+          "pred": 0.0267,
+          "obs": 0.0271,
+          "n": 775
+        },
+        {
+          "pred": 0.0353,
+          "obs": 0.0323,
+          "n": 775
+        },
+        {
+          "pred": 0.0465,
+          "obs": 0.0684,
+          "n": 775
+        },
+        {
+          "pred": 0.0653,
+          "obs": 0.0955,
+          "n": 775
+        },
+        {
+          "pred": 0.1388,
+          "obs": 0.1379,
+          "n": 776
+        }
+      ]
+    },
+    "lightgbm": {
+      "n": 7753,
+      "prevalence": 0.0414,
+      "mean_pred": 0.03959,
+      "o_e_ratio": 1.0457,
+      "auc": 0.77071,
+      "pr_auc": 0.13397,
+      "brier": 0.03783,
+      "brier_skill": 0.04692,
+      "capture_top10pct": 0.3894,
+      "capture_top30pct": 0.6947,
+      "weighted_prevalence": 0.02954,
+      "weighted_mean_pred": 0.02929,
+      "weighted_o_e_ratio": 1.0086,
+      "weighted_auc": 0.77255,
+      "weighted_brier_skill": 0.04044
+    },
+    "age_continuous_ranking": {
+      "n": 7753,
+      "prevalence": 0.0414,
+      "mean_pred": 0.53726,
+      "o_e_ratio": 0.0771,
+      "auc": 0.71446,
+      "pr_auc": 0.08688,
+      "brier": 0.3061,
+      "brier_skill": -6.71235,
+      "capture_top10pct": 0.271,
+      "capture_top30pct": 0.6075,
+      "weighted_prevalence": 0.02954,
+      "weighted_mean_pred": 0.4895,
+      "weighted_o_e_ratio": 0.0603,
+      "weighted_auc": 0.73403,
+      "weighted_brier_skill": -8.15149
+    },
+    "age_ge40_binary_rule": {
+      "cutoff": 40,
+      "screen_rate": 0.7365,
+      "sensitivity": 0.9283,
+      "specificity": 0.2718,
+      "ppv": 0.0522,
+      "auc": 0.60007
+    },
+    "deployed_coefficients": {
+      "age": 0.2879,
+      "sex": -0.0709,
+      "whtr": 0.1139,
+      "diastolic_bp": 0.0,
+      "diagnosed_htn": 0.326,
+      "high_chol": 0.1583,
+      "cvd_history": 0.3365,
+      "sleep_hours": -0.0928,
+      "income_ratio": -0.1759,
+      "education": -0.0425
+    },
+    "sign_clamped_features": [
+      "diastolic_bp"
+    ]
+  }
+}

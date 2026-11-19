@@ -1,0 +1,5 @@
+id,age,sex,height_cm,weight_kg,bmi,waist_cm,systolic_bp,diastolic_bp,family_hx_diabetes,diagnosed_htn,high_chol,cvd_history,current_smoker,sleep_hours,pregnant,district,language
+HTN-001,52,male,175,88,28.7,96,148,94,no,no,no,no,no,6,no,Al Ain,EN
+HTN-002,46,female,160,78,30.5,92,142,88,no,no,no,no,no,6.5,no,Khalifa City,AR
+HTN-003,63,male,170,82,28.4,98,168,102,yes,no,yes,no,no,5.5,no,Mussafah,EN
+HTN-004,57,female,158,80,32.0,96,158,96,no,no,no,no,no,6,no,Al Ain,AR

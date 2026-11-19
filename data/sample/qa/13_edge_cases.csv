@@ -1,0 +1,7 @@
+id,age,sex,bmi,pregnant,systolic_bp,diastolic_bp,district,language
+EDGE-AGE19,19,male,25,no,,,Al Ain,EN
+EDGE-AGE20,20,male,25,no,,,Al Ain,EN
+EDGE-PREG-MALE,30,male,25,yes,,,Al Ain,EN
+EDGE-SEX1,40,1,26,no,,,Al Ain,EN
+EDGE-DUP,50,male,27,no,,,Al Ain,EN
+EDGE-DUP,50,male,27,no,,,Al Ain,EN

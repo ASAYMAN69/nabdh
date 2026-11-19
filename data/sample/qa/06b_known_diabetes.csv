@@ -1,0 +1,5 @@
+id,age,sex,bmi,hba1c,fpg,diagnosed_diabetes,borderline_diabetes,district,language
+KDM-001,58,male,32,8.2,180,yes,no,Al Ain,EN
+KDM-002,49,female,30,6.1,110,no,yes,Khalifa City,AR
+KDM-003,62,male,29,7.0,130,yes,no,Mussafah,EN
+KDM-004,44,female,31,5.9,104,no,no,Al Ain,TL

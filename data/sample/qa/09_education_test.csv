@@ -1,0 +1,4 @@
+id,age,sex,bmi,education,district,language
+EDU-001,50,male,29,1,Al Ain,EN
+EDU-002,50,male,29,5,Al Ain,EN
+EDU-003,50,male,29,college,Al Ain,EN

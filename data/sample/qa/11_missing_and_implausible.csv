@@ -1,0 +1,5 @@
+id,age,sex,bmi,district,language
+MISS-001,,male,28,Al Ain,EN
+MISS-002,45,,28,Al Ain,EN
+MISS-003,130,male,28,Al Ain,EN
+MISS-004,50,male,-5,Al Ain,EN

@@ -1,0 +1,3 @@
+id,age,sex,bmi,pregnant,systolic_bp,diastolic_bp
+BP-CRISIS-ADULT,45,male,31,no,185,115
+BP-SEVERE-PREGNANCY,28,female,30,yes,165,110

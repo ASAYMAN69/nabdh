@@ -1,0 +1,5 @@
+id,age,sex,height_cm,weight_kg,bmi,waist_cm,diastolic_bp,diagnosed_htn,high_chol,cvd_history,current_smoker,total_chol,hdl,ldl,triglycerides,egfr,sleep_hours,income_ratio,education,district,language
+CKD-001,68,male,170,80,27.7,98,90,yes,yes,yes,no,250,38,160,220,48,6,1.2,2,Al Ain,EN
+CKD-002,72,female,158,70,28.0,96,88,yes,yes,no,no,260,42,170,200,42,6.5,1.5,2,Khalifa City,AR
+LIP-001,55,male,175,85,27.8,100,86,no,no,no,no,255,35,165,210,80,7,2.5,3,Mussafah,EN
+LIP-002,48,female,162,78,29.7,94,84,no,no,no,no,245,38,150,190,90,7.5,2.8,3,Al Ain,TL

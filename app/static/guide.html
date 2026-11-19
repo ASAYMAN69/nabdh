@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="referrer" content="no-referrer" />
+  <script src="/static/theme-init.js"></script>
+  <title>Data Guide — Nabdh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link visually-hidden">Skip to main content</a>
+
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <div class="brand">
+        <svg class="brand-glyph" viewBox="0 0 28 24" width="24" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M2 13h4.5l2.5-8.5 3.6 15 2.7-8.5 1.8 2.5H26" />
+        </svg>
+        <div>
+          <p class="brand-name">Nabdh</p>
+          <p class="subtitle">Documentation</p>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <a class="btn btn-ghost" href="/">Back to app</a>
+        <button type="button" id="theme-toggle" class="btn btn-outline">Toggle theme</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="shell docs-shell" id="main">
+    <section class="docs-hero">
+      <p class="doc-kicker">Data guide</p>
+      <h1>Format your data so the tool can read it</h1>
+      <p class="docs-lede">
+        A clean CSV is the difference between a useful screening list and a list full of warnings.
+        This page gives you the exact columns, accepted values, units, and fixes for the most common mistakes.
+        No technical background needed.
+      </p>
+      <div class="docs-hero-actions">
+        <a class="btn btn-primary" href="/clinician_template.csv" download>Download full template</a>
+        <a class="btn btn-outline" href="/clinician_template_minimal.csv" download>Minimal template</a>
+        <a class="btn btn-ghost" href="/clinician_template_lab_units.csv" download>Labs in other units</a>
+      </div>
+      <div class="docs-callout docs-callout-warn">
+        <strong>Before you start:</strong> remove names, Emirates ID, phone numbers, addresses, and free-text notes.
+        Use a study or clinic ID. This demo is local and has no login; do not put real patient data in it.
+      </div>
+    </section>
+
+    <div class="docs-layout">
+      <nav class="docs-nav" aria-label="On this page">
+        <p class="docs-nav-title">On this page</p>
+        <a href="#quick-start">Quick start</a>
+        <a href="#required">Required columns</a>
+        <a href="#sex">Sex coding</a>
+        <a href="#helpful">Helpful columns</a>
+        <a href="#labs">Lab results &amp; units</a>
+        <a href="#mistakes">Common mistakes</a>
+        <a href="#example">Example file</a>
+        <a href="#after">After you upload</a>
+        <a href="#safety">Safety notes</a>
+        <a href="#developers">For developers</a>
+      </nav>
+
+      <article class="docs-content">
+        <section id="quick-start" class="docs-section">
+          <h2>Quick start</h2>
+          <p>
+            A CSV is just a table saved as text. You can make one in Excel or Google Sheets.
+            The tool requires <strong>two columns</strong>: <code>age</code> and <code>sex</code>.
+            We strongly recommend a third: <code>id</code>.
+          </p>
+          <div class="docs-grid docs-grid-3">
+            <div class="docs-card">
+              <span class="docs-card-num">1</span>
+              <h3>Put column names in row 1</h3>
+              <p><code>id</code>, <code>age</code>, <code>sex</code>, then any optional columns.</p>
+            </div>
+            <div class="docs-card">
+              <span class="docs-card-num">2</span>
+              <h3>One person per row</h3>
+              <p>No merged cells, no totals, no blank rows, no title rows.</p>
+            </div>
+            <div class="docs-card">
+              <span class="docs-card-num">3</span>
+              <h3>Save as CSV UTF-8</h3>
+              <p>In Excel: <em>Save As → CSV UTF-8 (Comma delimited)</em>.</p>
+            </div>
+          </div>
+          <div class="docs-callout docs-callout-tip">
+            <strong>Tip:</strong> the full template already contains every standard column the tool reads.
+            Delete the example rows and any columns you do not need. Blank cells are fine.
+          </div>
+        </section>
+
+        <section id="required" class="docs-section">
+          <h2>Required and recommended columns</h2>
+          <div class="docs-table-wrap">
+            <table class="docs-table">
+              <thead>
+                <tr><th>Column</th><th>Required?</th><th>What to put</th><th>Example</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>id</code></td>
+                  <td><span class="docs-badge docs-badge-rec">Recommended</span></td>
+                  <td>A study or clinic ID. If missing, the tool uses the row number and you cannot link a result back to a person. Do not use names or Emirates ID.</td>
+                  <td><code>EX-001</code></td>
+                </tr>
+                <tr>
+                  <td><code>age</code></td>
+                  <td><span class="docs-badge docs-badge-req">Required</span></td>
+                  <td>Age in years, 0–120. Missing or impossible values are flagged, not guessed.</td>
+                  <td><code>45</code></td>
+                </tr>
+                <tr>
+                  <td><code>sex</code></td>
+                  <td><span class="docs-badge docs-badge-req">Required</span></td>
+                  <td>Safest: <code>male</code> or <code>female</code>. Also accepted: <code>m</code>/<code>f</code>, <code>0</code>/<code>1</code>, <code>1</code>/<code>2</code>.</td>
+                  <td><code>female</code></td>
+                </tr>
+                <tr>
+                  <td><code>pregnant</code></td>
+                  <td><span class="docs-badge docs-badge-rec">Complete if relevant</span></td>
+                  <td><code>yes</code> or <code>no</code> for every woman who may be pregnant. Pregnancy changes the pathway. Leave blank for men.</td>
+                  <td><code>no</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="sex" class="docs-section">
+          <h2>Sex coding — read this once</h2>
+          <p>
+            Sex can be text or numbers. Use <strong>one convention for the whole file</strong>.
+            The safest choice is the word <code>male</code> or <code>female</code>.
+          </p>
+          <div class="docs-table-wrap">
+            <table class="docs-table">
+              <thead>
+                <tr><th>If your file uses</th><th>Meaning</th><th>Example</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>male</code> / <code>female</code></td><td>Text. Safest.</td><td><code>female</code></td></tr>
+                <tr><td><code>m</code> / <code>f</code></td><td>Short text.</td><td><code>m</code></td></tr>
+                <tr><td><code>0</code> / <code>1</code></td><td>0 = male, 1 = female</td><td><code>0</code>, <code>1</code></td></tr>
+                <tr><td><code>1</code> / <code>2</code></td><td>1 = male, 2 = female</td><td><code>1</code>, <code>2</code></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="docs-callout docs-callout-danger">
+            <strong>Ambiguous file:</strong> a column containing only <code>1</code>s is read as
+            <strong>1 = female</strong>. If all the people in your file are male and your system codes male as
+            <code>1</code>, use the word <code>male</code>, or rename the column to <code>riagendr</code> and upload again.
+            Mixing <code>0</code> and <code>2</code> in one file is also unsafe.
+          </div>
+        </section>
+
+        <section id="helpful" class="docs-section">
+          <h2>Helpful columns</h2>
+          <p>These improve the priority order. They are optional, but more complete data gives a better result.</p>
+          <div class="docs-table-wrap">
+            <table class="docs-table">
+              <thead>
+                <tr><th>Column</th><th>Unit / values</th><th>Example</th><th>Notes</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>height_cm</code></td><td>cm</td><td><code>170</code></td><td>Used with weight to calculate BMI.</td></tr>
+                <tr><td><code>weight_kg</code></td><td>kg</td><td><code>82</code></td><td>Used with height.</td></tr>
+                <tr><td><code>bmi</code></td><td>kg/m²</td><td><code>31.0</code></td><td>Calculated from height and weight if missing.</td></tr>
+                <tr><td><code>waist_cm</code></td><td>cm</td><td><code>101</code></td><td>Also accepted as <code>waist</code>.</td></tr>
+                <tr><td><code>systolic_bp</code></td><td>mmHg</td><td><code>145</code></td><td>Also accepted as <code>sbp</code>.</td></tr>
+                <tr><td><code>diastolic_bp</code></td><td>mmHg</td><td><code>92</code></td><td>Also accepted as <code>dbp</code>.</td></tr>
+                <tr><td><code>family_hx_diabetes</code></td><td><code>yes</code>/<code>no</code></td><td><code>yes</code></td><td>Family history of diabetes.</td></tr>
+                <tr><td><code>diagnosed_htn</code></td><td><code>yes</code>/<code>no</code></td><td><code>no</code></td><td>Already diagnosed with high blood pressure.</td></tr>
+                <tr><td><code>high_chol</code></td><td><code>yes</code>/<code>no</code></td><td><code>no</code></td><td>Already diagnosed with high cholesterol.</td></tr>
+                <tr><td><code>cvd_history</code></td><td><code>yes</code>/<code>no</code></td><td><code>no</code></td><td>History of heart disease or stroke.</td></tr>
+                <tr><td><code>current_smoker</code></td><td><code>yes</code>/<code>no</code></td><td><code>no</code></td><td>Currently smokes.</td></tr>
+                <tr><td><code>sleep_hours</code></td><td>hours</td><td><code>6.5</code></td><td>Average hours per night.</td></tr>
+                <tr><td><code>glucose_test_3y</code></td><td><code>yes</code>/<code>no</code></td><td><code>no</code></td><td>Glucose test in the last 3 years.</td></tr>
+                <tr><td><code>diagnosed_diabetes</code></td><td><code>yes</code>/<code>no</code></td><td><code>no</code></td><td>Already diagnosed with diabetes. Changes the pathway.</td></tr>
+                <tr><td><code>borderline_diabetes</code></td><td><code>yes</code>/<code>no</code></td><td><code>no</code></td><td>Previously told they have prediabetes.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="labs" class="docs-section">
+          <h2>Lab results and units</h2>
+          <p>
+            Use the standard units below. If your lab uses a different unit, either convert it before upload
+            or use the unit-suffixed column name. The tool converts explicit non-standard units and keeps the original value.
+          </p>
+          <div class="docs-table-wrap">
+            <table class="docs-table">
+              <thead>
+                <tr><th>Lab</th><th>Standard unit</th><th>Example</th><th>Also accepted</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>hba1c</code></td><td>%</td><td><code>6.9</code></td><td><code>hba1c_mmol_mol</code>, <code>a1c</code></td></tr>
+                <tr><td><code>fpg</code></td><td>mg/dL</td><td><code>126</code></td><td><code>fpg_mmol_l</code>, <code>fasting_glucose</code></td></tr>
+                <tr><td><code>total_chol</code></td><td>mg/dL</td><td><code>190</code></td><td><code>total_chol_mmol_l</code></td></tr>
+                <tr><td><code>hdl</code></td><td>mg/dL</td><td><code>45</code></td><td><code>hdl_mmol_l</code></td></tr>
+                <tr><td><code>ldl</code></td><td>mg/dL</td><td><code>120</code></td><td><code>ldl_mmol_l</code></td></tr>
+                <tr><td><code>triglycerides</code></td><td>mg/dL</td><td><code>150</code></td><td><code>triglycerides_mmol_l</code></td></tr>
+                <tr><td><code>egfr</code></td><td>mL/min/1.73m²</td><td><code>78</code></td><td>—</td></tr>
+                <tr><td><code>troponin_i</code></td><td>ng/mL</td><td><code>0.18</code></td><td><code>troponin_i_ng_l</code>, <code>troponin_i_pg_ml</code></td></tr>
+                <tr><td><code>nt_probnp</code></td><td>pg/mL</td><td><code>300</code></td><td><code>nt_probnp_pg_ml</code></td></tr>
+                <tr><td><code>d_dimer</code></td><td>ng/mL FEU</td><td><code>500</code></td><td><code>d_dimer_ug_ml</code>, <code>d_dimer_mg_l</code></td></tr>
+                <tr><td><code>lvef_pct</code></td><td>%</td><td><code>34</code></td><td><code>lvef_fraction</code></td></tr>
+                <tr><td><code>coronary_calcium_score</code></td><td>AU</td><td><code>120</code></td><td>—</td></tr>
+                <tr><td><code>hs_crp</code></td><td>mg/L</td><td><code>2.5</code></td><td>—</td></tr>
+                <tr><td><code>lp_a</code></td><td>nmol/L</td><td><code>30</code></td><td>—</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3>Three unit traps that can hurt</h3>
+          <div class="docs-callout docs-callout-danger">
+            <strong>D-dimer:</strong> many labs report <strong>µg/mL FEU</strong>. If you enter <code>0.5</code> into
+            <code>d_dimer</code>, it is marked <strong>unit-suspect</strong> and is <strong>not</strong> escalated.
+            Use <code>d_dimer_ug_ml</code> or convert to ng/mL FEU.
+          </div>
+          <div class="docs-callout docs-callout-danger">
+            <strong>LVEF:</strong> a fraction such as <code>0.45</code> entered into <code>lvef_pct</code> is marked
+            <strong>unit-suspect</strong> and is not escalated. Use <code>lvef_fraction</code> or enter <code>45</code>.
+          </div>
+          <div class="docs-callout docs-callout-warn">
+            <strong>Assay names matter:</strong> the tool reads <strong>troponin I</strong> and <strong>NT-proBNP</strong>.
+            It does not distinguish troponin T from troponin I, or BNP from NT-proBNP. Do not put a different assay
+            in these columns; leave it blank or use a column the tool recognises.
+          </div>
+          <div class="docs-callout docs-callout-warn">
+            <strong>Do not type units in cells.</strong> Write <code>126</code>, not <code>126 mg/dL</code>.
+            A cell with text is treated as missing.
+          </div>
+        </section>
+
+        <section id="mistakes" class="docs-section">
+          <h2>Common mistakes and fixes</h2>
+          <div class="docs-table-wrap">
+            <table class="docs-table">
+              <thead>
+                <tr><th>Mistake</th><th>What happens</th><th>Fix</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Missing <code>age</code> or <code>sex</code> column</td><td>Upload is rejected.</td><td>Add both columns.</td></tr>
+                <tr><td>A missing value in one row</td><td>That row is marked <strong>Insufficient data</strong>.</td><td>Fill it or remove the row.</td></tr>
+                <tr><td>Mixing <code>0/1</code> and <code>1/2</code> sex codes</td><td>Read as <code>0/1</code>; <code>2</code> becomes missing.</td><td>Use one convention.</td></tr>
+                <tr><td>A file of all <code>1</code>s for sex</td><td>Read as female.</td><td>Use <code>male</code>/<code>female</code> or rename the column to <code>riagendr</code>.</td></tr>
+                <tr><td>Text in a number field (<code>abc</code>)</td><td>Treated as missing.</td><td>Correct the cell or leave it blank.</td></tr>
+                <tr><td>Age <code>130</code> or BMI <code>-5</code></td><td>Treated as missing and warned about.</td><td>Correct the value.</td></tr>
+                <tr><td>Units in a cell (<code>126 mg/dL</code>)</td><td>Treated as text, then missing.</td><td>Use the column name for the unit.</td></tr>
+                <tr><td>Decimal comma (<code>6,5</code>) or thousands separator (<code>1,200</code>)</td><td>Column may split or be read as text.</td><td>Use a dot and no separator.</td></tr>
+                <tr><td>Dates in numeric columns</td><td>Dates are not read.</td><td>Use the <code>yes</code>/<code>no</code> screening-history columns.</td></tr>
+                <tr><td>Merged cells or title rows</td><td>The header is not read correctly.</td><td>Keep one clean header row.</td></tr>
+                <tr><td>No <code>id</code></td><td>The tool uses the row number.</td><td>Add an <code>id</code> if you need to link results back.</td></tr>
+                <tr><td>Duplicate IDs</td><td>Both rows are kept; they are not merged.</td><td>Give each person a unique ID.</td></tr>
+                <tr><td><code>pregnant</code> left blank</td><td>The adult pathway is used instead of the obstetric pathway.</td><td>Complete it for every woman who may be pregnant.</td></tr>
+                <tr><td>CSV saved as <code>.xlsx</code></td><td>The tool only reads CSV.</td><td>Save as CSV UTF-8.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="example" class="docs-section">
+          <h2>Example file</h2>
+          <p>Minimal file:</p>
+          <pre class="code-block"><code>id,age,sex,pregnant
+EX-001,29,female,no
+EX-002,52,male,</code></pre>
+          <p>With a few helpful columns:</p>
+          <pre class="code-block"><code>id,age,sex,height_cm,weight_kg,bmi,waist_cm,systolic_bp,diastolic_bp,family_hx_diabetes,pregnant,district,language
+EX-001,29,female,162,87,33.2,92,138,86,yes,no,Al Ain,AR
+EX-002,52,male,175,95,31,101,145,92,yes,,Khalifa City,EN</code></pre>
+          <div class="docs-callout docs-callout-tip">
+            <strong>Download a ready file:</strong>
+            <a href="/clinician_template.csv" download>full template</a> ·
+            <a href="/clinician_template_minimal.csv" download>minimal template</a> ·
+            <a href="/clinician_template_lab_units.csv" download>labs in other units</a>.
+            Delete the example rows before adding your own people.
+          </div>
+        </section>
+
+        <section id="after" class="docs-section">
+          <h2>After you upload</h2>
+          <ul class="docs-list">
+            <li>The tool reads the file and shows a <strong>Cohort Summary</strong>.</li>
+            <li>Warnings appear at the top of the results in plain language.</li>
+            <li>A row with missing <code>age</code> or <code>sex</code> is marked <strong>Insufficient data</strong>. It is not treated as normal.</li>
+            <li>If one lab has an ambiguous unit, <strong>only that lab</strong> is excluded. The person's other results are still used. The summary shows <strong>Results not checked</strong>. Correct the unit and upload again.</li>
+            <li>Small groups are hidden in the privacy report.</li>
+            <li>Click any row to see why the person was flagged, what was captured, and the recommended pathway.</li>
+          </ul>
+          <div class="docs-callout docs-callout-danger">
+            <strong>If the file has no lab results or BP:</strong> the tool can still order the list, but it has
+            checked nothing that could be urgent. The absence of urgent rows means <strong>“not checked”</strong>,
+            not <strong>“normal”</strong>.
+          </div>
+        </section>
+
+        <section id="safety" class="docs-section">
+          <h2>Safety notes</h2>
+          <div class="docs-grid docs-grid-2">
+            <div class="docs-card">
+              <h3>Unit-suspect urgent labs</h3>
+              <p>
+                If a troponin, D-dimer, or NT-proBNP is in an urgent range but the unit is missing or ambiguous,
+                it will <strong>not</strong> make the person Urgent. The row may look routine.
+                Treat that result as unreviewed and follow it up manually; the tier is not reassurance.
+              </p>
+            </div>
+            <div class="docs-card">
+              <h3>Tests the tool does not read</h3>
+              <p>
+                The tool does not apply clinical rules to creatinine, potassium, sodium, INR, urine albumin/ACR,
+                ALT/AST, bilirubin, TSH, haemoglobin, or ECG/QTc. BNP and troponin T are also not read.
+                A blank column does not mean “normal”; it may mean “not read”.
+              </p>
+            </div>
+            <div class="docs-card">
+              <h3>Dates and treatment status</h3>
+              <p>
+                The tool does not read measurement dates or know whether a raised BP is already treated.
+                Use the screening-history <code>yes</code>/<code>no</code> columns, and record the diagnosis accurately.
+              </p>
+            </div>
+            <div class="docs-card">
+              <h3>Small groups</h3>
+              <p>
+                Groups with fewer than 10 adults are hidden, with complementary suppression to prevent
+                subtraction. This protects privacy; it does not change the person's own result.
+              </p>
+            </div>
+          </div>
+          <p class="muted">
+            This is a demonstration prototype. It is not a medical device and must not be used for diagnosis or
+            treatment without local validation, regulatory review, and clinician sign-off.
+          </p>
+        </section>
+
+        <section id="developers" class="docs-section">
+          <h2>For developers</h2>
+          <p>
+            The app is a same-origin FastAPI service. Scoring is deterministic and makes no external calls.
+            Upload a CSV with <code>multipart/form-data</code>; the field name is <code>file</code>.
+          </p>
+          <div class="docs-table-wrap">
+            <table class="docs-table">
+              <thead>
+                <tr><th>Endpoint</th><th>Purpose</th></tr>
+              </thead>
+              <tbody>
+                <tr><td><code>GET /health</code></td><td>Service health and version.</td></tr>
+                <tr><td><code>POST /api/score</code></td><td>Score a CSV and return ranked JSON.</td></tr>
+                <tr><td><code>POST /api/score.csv</code></td><td>Download the ranked list as a sanitised CSV.</td></tr>
+                <tr><td><code>GET /api/outcomes</code></td><td>Read the local outcome tracker.</td></tr>
+                <tr><td><code>POST /api/outcomes</code></td><td>Record a simulated outreach choice or completion.</td></tr>
+                <tr><td><code>GET /clinician_template.csv</code></td><td>Download the full template.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <h3>Example</h3>
+          <pre class="code-block"><code>curl -s http://127.0.0.1:8000/health
+
+curl -s -X POST http://127.0.0.1:8000/api/score \
+  -F "file=@clinician_template.csv;type=text/csv"</code></pre>
+          <h3>Limits and formats</h3>
+          <ul class="docs-list">
+            <li>CSV, UTF-8. Comma is safest; semicolons, tabs, and <code>|</code> are also read.</li>
+            <li>Maximum 200,000 rows, 1,000 columns, 64 MB.</li>
+            <li>Aliases are accepted for common column names (<code>gender</code> → <code>sex</code>, <code>sbp</code> → <code>systolic_bp</code>, <code>a1c</code> → <code>hba1c</code>).</li>
+            <li>CSV export neutralises leading <code>= + - @</code> to prevent spreadsheet formula injection.</li>
+            <li>The demo has no authentication, TLS, or multi-user isolation. Do not deploy it with real patient data.</li>
+          </ul>
+          <p class="muted">
+            Full technical documentation is in the repository: <code>SUBMISSION.md</code>,
+            <code>docs/TECHNICAL_OVERVIEW.md</code>, <code>docs/MODEL_CARD.md</code>, and
+            <code>docs/ASSUMPTIONS_AND_LIMITATIONS.md</code>.
+          </p>
+        </section>
+
+        <section class="docs-section docs-cta">
+          <h2>Ready to upload?</h2>
+          <p>Start with the template, delete the example rows, and add your own people.</p>
+          <div class="docs-hero-actions">
+            <a class="btn btn-primary" href="/clinician_template.csv" download>Full template</a>
+            <a class="btn btn-outline" href="/clinician_template_minimal.csv" download>Minimal template</a>
+            <a class="btn btn-ghost" href="/">Back to the app</a>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="shell site-footer">
+    <p class="muted">
+      Nabdh · Data guide · Population screening prioritisation only — not an individual clinical diagnosis.
+      Clinician sign-off required.
+    </p>
+  </footer>
+
+  <script src="/static/guide.js"></script>
+</body>
+</html>

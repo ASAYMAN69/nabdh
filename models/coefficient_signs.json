@@ -1,0 +1,33 @@
+{
+  "full__undiagnosed_dm": {
+    "high_chol": -0.0554
+  },
+  "nofamily__undiagnosed_dm": {
+    "high_chol": -0.0447
+  },
+  "full__dysglycaemia": {
+    "cvd_history": -0.0992
+  },
+  "nofamily__dysglycaemia": {
+    "cvd_history": -0.101
+  },
+  "full__undiagnosed_htn": {
+    "family_hx_diabetes": -0.0145,
+    "high_chol": -0.0701
+  },
+  "nofamily__undiagnosed_htn": {
+    "high_chol": -0.0708
+  },
+  "full__undiagnosed_dyslipidaemia": {
+    "cvd_history": -0.0457
+  },
+  "nofamily__undiagnosed_dyslipidaemia": {
+    "cvd_history": -0.0444
+  },
+  "full__ckd_risk": {
+    "diastolic_bp": -0.0996
+  },
+  "nofamily__ckd_risk": {
+    "diastolic_bp": -0.0966
+  }
+}

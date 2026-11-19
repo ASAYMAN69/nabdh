@@ -1,0 +1,4 @@
+id,age,sex,bmi,troponin_i,district,language,d_dimer,lvef_pct
+SUSPECT-001,60,male,28,180,Khalifa City,EN,,
+SUSPECT-002,58,female,30,,Al Ain,AR,0.5,
+SUSPECT-003,65,male,27,,Mussafah,EN,,0.45

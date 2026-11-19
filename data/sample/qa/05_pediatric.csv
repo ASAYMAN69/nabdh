@@ -1,0 +1,5 @@
+id,age,sex,height_cm,weight_kg,bmi,waist_cm,systolic_bp,diastolic_bp,missed_well_child_visits,developmental_delay_flag,immunization_status,district,language
+PED-001,12,female,152,68,29.4,82,118,76,1,no,overdue,Al Ain,EN
+PED-002,8,male,128,32,19.5,62,102,66,0,no,up_to_date,Khalifa City,EN
+PED-003,2,female,88,14,18.1,50,98,60,0,no,up_to_date,Mussafah,AR
+PED-004,16,male,170,55,19.0,72,110,68,0,no,complete,Al Ain,TL

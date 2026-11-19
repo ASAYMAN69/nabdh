@@ -1,0 +1,137 @@
+{
+  "catalog_version": "1.0.0",
+  "effective_date": "2026-11-19",
+  "tests": [
+    {
+      "canonical": "troponin_i",
+      "aliases": ["troponin_i", "troponin", "hs_troponin_i", "ctni", "trop_i"],
+      "code": "10839-9",
+      "unit": "ng/mL",
+      "unit_aliases": {
+        "ng_ml": "ng/mL",
+        "ng/ml": "ng/mL",
+        "ng_l": "ng/L",
+        "ng/l": "ng/L",
+        "pg_ml": "pg/mL",
+        "pg/ml": "pg/mL"
+      },
+      "plausible": [0.0, 50.0],
+      "unit_suspect_gt": 50.0,
+      "ref": {
+        "high": 0.04
+      },
+      "rules": ["CV-TROP-01"]
+    },
+    {
+      "canonical": "nt_probnp",
+      "aliases": ["nt_probnp", "nt-probnp", "nterminalprobnp", "probnp"],
+      "code": "33762-6",
+      "unit": "pg/mL",
+      "unit_aliases": {
+        "pg_ml": "pg/mL",
+        "pg/ml": "pg/mL",
+        "ng_l": "ng/L",
+        "ng/l": "ng/L"
+      },
+      "plausible": [0.0, 300000.0],
+      "ref": {
+        "age_bands": [
+          {"max_age": 49, "high": 125.0},
+          {"max_age": 59, "high": 225.0},
+          {"max_age": 74, "high": 450.0},
+          {"max_age": 120, "high": 900.0}
+        ]
+      },
+      "rules": ["CV-NT-proBNP-01"]
+    },
+    {
+      "canonical": "lvef_pct",
+      "aliases": ["lvef_pct", "lvef", "ejection_fraction", "ef_pct"],
+      "code": "10230-1",
+      "unit": "%",
+      "unit_aliases": {
+        "pct": "%",
+        "%": "%"
+      },
+      "plausible": [5.0, 90.0],
+      "unit_suspect_le": 1.0,
+      "ref": {
+        "low": 50.0,
+        "high": 75.0
+      },
+      "rules": ["CV-LVEF-01"]
+    },
+    {
+      "canonical": "coronary_calcium_score",
+      "aliases": ["coronary_calcium_score", "cac_score", "agatston_score", "calcium_score"],
+      "code": "43304-5",
+      "unit": "AU",
+      "unit_aliases": {
+        "au": "AU"
+      },
+      "plausible": [0.0, 10000.0],
+      "ref": {
+        "high": 0.0
+      },
+      "rules": ["CV-CAC-01", "CV-CAC-02"]
+    },
+    {
+      "canonical": "d_dimer",
+      "aliases": ["d_dimer", "ddimer", "d-dimer"],
+      "code": "48065-7",
+      "unit": "ng/mL FEU",
+      "unit_aliases": {
+        "ng_ml": "ng/mL FEU",
+        "ng/ml": "ng/mL FEU",
+        "feu": "ng/mL FEU",
+        "ug_l": "ng/mL FEU",
+        "ug/l": "ng/mL FEU"
+      },
+      "plausible": [0.0, 100000.0],
+      "unit_suspect_lt": 5.0,
+      "ref": {
+        "age_adjusted_gt50_multiplier": 10.0,
+        "high": 500.0
+      },
+      "rules": ["CV-DDIMER-01"]
+    },
+    {
+      "canonical": "hs_crp",
+      "aliases": ["hs_crp", "hscrp", "crp_hs", "high_sensitivity_crp"],
+      "code": "30522-7",
+      "unit": "mg/L",
+      "unit_aliases": {
+        "mg_l": "mg/L",
+        "mg/l": "mg/L"
+      },
+      "plausible": [0.0, 500.0],
+      "ref": {
+        "high": 3.0
+      },
+      "rules": ["CV-HSCRP-01"]
+    },
+    {
+      "canonical": "lp_a",
+      "aliases": ["lp_a", "lpa", "lipoprotein_a"],
+      "code": "43583-4",
+      "unit": "nmol/L",
+      "unit_aliases": {
+        "nmol_l": "nmol/L",
+        "nmol/l": "nmol/L",
+        "mg_dl": "mg/dL",
+        "mg/dl": "mg/dL"
+      },
+      "plausible": [0.0, 1500.0],
+      "ref": {
+        "high": 75.0
+      },
+      "rules": ["CV-LPA-01"]
+    }
+  ],
+  "text_passthrough": [
+    "ecg_finding",
+    "clinical_notes",
+    "notes",
+    "imaging_summary"
+  ]
+}
