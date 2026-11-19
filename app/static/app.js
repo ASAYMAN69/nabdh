@@ -97,7 +97,7 @@ function setActiveFile(file) {
   if (ACTIVE_FILE) {
     $("file-meta").textContent = `${ACTIVE_FILE.name} · ${formatBytes(ACTIVE_FILE.size)}`;
   } else {
-    $("file-meta").textContent = "No file selected · max 200,000 rows";
+    $("file-meta").textContent = "Age + sex required · scoring starts automatically";
   }
 }
 
@@ -130,7 +130,7 @@ function setScoring(on) {
   } else if (ACTIVE_FILE) {
     meta.textContent = `${ACTIVE_FILE.name} · ${formatBytes(ACTIVE_FILE.size)}`;
   } else {
-    meta.textContent = "No file selected · max 200,000 rows";
+    meta.textContent = "Age + sex required · scoring starts automatically";
   }
 }
 
@@ -914,4 +914,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const dialog = $("how-dialog");
   $("open-how").addEventListener("click", () => dialog.showModal());
+  const helpBtn = $("btn-help");
+  if (helpBtn) helpBtn.addEventListener("click", () => dialog.showModal());
 });

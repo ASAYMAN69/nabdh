@@ -67,53 +67,7 @@
 
   <main class="shell stack">
     <section class="card glass-card upload-card" aria-labelledby="upload-heading">
-      <div class="section-head upload-head">
-        <div class="upload-intro">
-          <h2 id="upload-heading" class="section-heading">Upload your cohort</h2>
-          <p class="muted upload-lead">
-            Upload a CSV with at least <code>age</code> and <code>sex</code>. Scoring starts automatically as soon as you choose a file — no button needed.
-          </p>
-        </div>
-      </div>
-
-      <div class="schema-guide" aria-label="Accepted CSV columns">
-        <div class="schema-group">
-          <span class="schema-label">Required</span>
-          <div class="schema-chips">
-            <code class="code-req">age</code>
-            <code class="code-req">sex</code>
-          </div>
-        </div>
-        <div class="schema-group">
-          <span class="schema-label">Helpful (optional)</span>
-          <div class="schema-chips">
-            <code>height_cm</code>
-            <code>weight_kg</code>
-            <code>waist_cm</code>
-            <code>systolic_bp</code>
-            <code>diastolic_bp</code>
-            <code>family_hx_diabetes</code>
-            <code>current_smoker</code>
-            <code>pregnant</code>
-          </div>
-        </div>
-        <div class="schema-group">
-          <span class="schema-label">Lab results (optional)</span>
-          <div class="schema-chips">
-            <code>hba1c</code>
-            <code>fpg</code>
-            <code>ldl</code>
-            <code>egfr</code>
-          </div>
-        </div>
-        <div class="schema-group">
-          <span class="schema-label">Context (optional)</span>
-          <div class="schema-chips">
-            <code>district</code>
-            <code>language</code>
-          </div>
-        </div>
-      </div>
+      <h2 id="upload-heading" class="visually-hidden">Upload your cohort</h2>
 
       <form id="score-form" class="upload-form">
         <div class="dropzone" id="dropzone">
@@ -125,8 +79,8 @@
               </svg>
             </span>
             <span class="dropzone-text">
-              <span class="dropzone-title">Drop a CSV file here or click to browse</span>
-              <span class="dropzone-meta" id="file-meta">No file selected · max 200,000 rows</span>
+              <span class="dropzone-title">Upload your CSV</span>
+              <span class="dropzone-meta" id="file-meta">Age + sex required · scoring starts automatically</span>
             </span>
           </label>
           <input id="csv-file" class="dropzone-input" type="file" name="file" accept=".csv,text/csv" required />
@@ -134,6 +88,7 @@
 
         <div class="action-bar">
           <button type="button" id="btn-demo" class="btn btn-secondary">Load 206-record demo</button>
+          <button type="button" id="btn-help" class="btn btn-ghost btn-sm">Need help?</button>
           <button type="button" id="dl-flagged" class="btn btn-outline export-action" hidden>Download flagged (CSV)</button>
         </div>
       </form>
