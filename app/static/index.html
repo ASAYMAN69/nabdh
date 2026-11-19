@@ -149,21 +149,21 @@
         </div>
 
         <div class="tier-hero" id="tier-hero" hidden>
-          <div class="tier-card tier-card-urgent">
+          <button type="button" class="tier-card tier-card-urgent" data-tier="Urgent Clinical Review" aria-haspopup="dialog" aria-controls="tier-dialog">
             <span class="tier-card-label">Urgent review</span>
             <span class="tier-card-num" id="tier-urgent">0</span>
-            <span class="tier-card-sub">Immediate clinician review</span>
-          </div>
-          <div class="tier-card tier-card-high">
+            <span class="tier-card-sub">Immediate clinician review · View list →</span>
+          </button>
+          <button type="button" class="tier-card tier-card-high" data-tier="High" aria-haspopup="dialog" aria-controls="tier-dialog">
             <span class="tier-card-label">High priority</span>
             <span class="tier-card-num" id="tier-high">0</span>
-            <span class="tier-card-sub">Within 30 days</span>
-          </div>
-          <div class="tier-card tier-card-elevated">
+            <span class="tier-card-sub">Within 30 days · View list →</span>
+          </button>
+          <button type="button" class="tier-card tier-card-elevated" data-tier="Elevated" aria-haspopup="dialog" aria-controls="tier-dialog">
             <span class="tier-card-label">Elevated</span>
             <span class="tier-card-num" id="tier-elevated">0</span>
-            <span class="tier-card-sub">Within 90 days</span>
-          </div>
+            <span class="tier-card-sub">Within 90 days · View list →</span>
+          </button>
         </div>
 
         <div class="kpi-grid" id="cards"></div>
@@ -335,6 +335,16 @@
       </ul>
       <p class="muted">Small groups are hidden to protect privacy. Outreach previews are simulated; no message is sent. Every action requires clinician sign-off.</p>
     </div>
+  </dialog>
+
+  <dialog id="tier-dialog" class="modal tier-modal" closedby="any" aria-labelledby="tier-dialog-title">
+    <div class="modal-head">
+      <h2 id="tier-dialog-title">Tier</h2>
+      <form method="dialog">
+        <button type="submit" class="btn btn-ghost btn-sm" aria-label="Close dialog">Close ×</button>
+      </form>
+    </div>
+    <div class="modal-body" id="tier-dialog-body"></div>
   </dialog>
 
   <script src="/static/app.js"></script>

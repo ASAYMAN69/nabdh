@@ -768,6 +768,22 @@
     border-radius: var(--radius-lg);
     border: 1px solid var(--glass-border-strong);
     box-shadow: var(--glass-shadow-sm);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    appearance: none;
+    transition: transform 120ms ease-out, box-shadow 120ms ease-out;
+  }
+
+  .tier-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--glass-shadow-lg);
+  }
+
+  .tier-card:focus-visible {
+    outline: 2px solid var(--accent-teal);
+    outline-offset: 2px;
   }
 
   .tier-card-label {
@@ -1621,6 +1637,64 @@
     gap: 0.45rem;
     font-size: 0.92rem;
     color: var(--ink-secondary);
+  }
+
+  .tier-modal {
+    inline-size: min(920px, calc(100vw - 2rem));
+    max-block-size: min(80vh, 760px);
+  }
+
+  .tier-modal .modal-body {
+    overflow: auto;
+    max-block-size: 60vh;
+  }
+
+  .tier-list {
+    display: grid;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .tier-list-row {
+    display: grid;
+    grid-template-columns: 120px 60px 90px 1fr;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--glass-border-strong);
+    border-radius: var(--radius-md);
+    background: var(--glass-subtle);
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .tier-list-row:hover {
+    background: var(--glass-hover);
+  }
+
+  .tier-list-id {
+    font-weight: 700;
+  }
+
+  .tier-list-flags {
+    color: var(--ink-muted);
+    font-size: 0.86rem;
+  }
+
+  .tier-list-empty {
+    margin: 0;
+    padding: 12px 0;
+    color: var(--ink-muted);
+  }
+
+  @media (max-width: 640px) {
+    .tier-list-row {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   /* Documentation page */

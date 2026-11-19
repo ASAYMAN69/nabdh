@@ -683,6 +683,48 @@ async function loadDemoCohort() {
   }
 }
 
+const TIER_LABELS = {
+  "Urgent Clinical Review": "Urgent review",
+  High: "High priority",
+  Elevated: "Elevated",
+};
+
+function openTierDialog(tier, trigger) {
+  if (!DATA) return;
+  const rows = DATA.results
+    .map((r, idx) => ({ r, idx }))
+    .filter(({ r }) => r.tier === tier);
+  const count = rows.length;
+  const title = $("tier-dialog-title");
+  const body = $("tier-dialog-body");
+  title.textContent = `${TIER_LABELS[tier] || tier} — ${count} patient${count === 1 ? "" : "s"}`;
+  if (!count) {
+    body.innerHTML = '<p class="tier-list-empty">No patients in this tier.</p>';
+  } else {
+    body.innerHTML =
+      '<ul class="tier-list">' +
+      rows.map(({ r, idx }) => {
+        const flags = (r.flags || []).slice(0, 2).join(" · ");
+        return (
+          `<li><button type="button" class="tier-list-row" data-modal-select="${idx}">` +
+          `<span class="tier-list-id">${esc(r.id)}</span>` +
+          `<span class="tabular">${fmtNum(r.age)}y</span>` +
+          `<span class="tabular">${fmtNum(r.risk_pct, "%")}</span>` +
+          `<span class="tier-list-flags">${esc(flags || r.tier)}</span>` +
+          `</button></li>`
+        );
+      }).join("") +
+      "</ul>";
+  }
+  const dialog = $("tier-dialog");
+  if (!dialog) return;
+  if (typeof dialog.showModal === "function") {
+    if (!dialog.open) dialog.showModal();
+  } else {
+    dialog.setAttribute("open", "");
+  }
+}
+
 function wireDropzone() {
   const dz = $("dropzone");
   const input = $("csv-file");
@@ -805,6 +847,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const demoBtn = $("btn-demo");
   if (demoBtn) demoBtn.addEventListener("click", loadDemoCohort);
+
+  document.querySelectorAll(".tier-card[data-tier]").forEach((card) => {
+    card.addEventListener("click", () => openTierDialog(card.dataset.tier, card));
+  });
+
+  const tierDialog = $("tier-dialog");
+  if (tierDialog) {
+    tierDialog.addEventListener("click", (e) => {
+      const pick = e.target.closest("[data-modal-select]");
+      if (!pick) return;
+      const idx = Number(pick.dataset.modalSelect);
+      tierDialog.close();
+      showDetail(idx, true);
+      const row = $("rows").querySelector(`tr[data-i="${idx}"]`);
+      if (row) row.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+  }
 
   $("score-form").addEventListener("submit", (e) => {
     e.preventDefault();
