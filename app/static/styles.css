@@ -531,18 +531,6 @@
     cursor: pointer;
   }
 
-  .dropzone-sketch {
-    display: grid;
-    place-items: center;
-    inline-size: 46px;
-    block-size: 46px;
-    border: 1px solid var(--glass-border-strong);
-    border-radius: var(--radius-sm);
-    background: var(--glass-elevated);
-    color: var(--accent-teal-ink);
-    flex-shrink: 0;
-  }
-
   .dropzone-text {
     display: grid;
     gap: 0.15rem;
@@ -570,22 +558,6 @@
 
   .dropzone[data-scoring="true"] {
     opacity: 0.72;
-  }
-
-  .dropzone[data-scoring="true"] .dropzone-sketch {
-    animation: nabdh-pulse 1s ease-in-out infinite;
-  }
-
-  @keyframes nabdh-pulse {
-    0%,
-    100% {
-      opacity: 1;
-      transform: scale(1);
-    }
-    50% {
-      opacity: 0.45;
-      transform: scale(0.96);
-    }
   }
 
   .action-bar {
