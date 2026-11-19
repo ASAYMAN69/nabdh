@@ -4,7 +4,7 @@
 **Submission format:** working prototype repository + 3-minute pre-recorded demonstration
 **Submission date:** 20 November 2026
 **Team size:** 1
-**Last verified:** 2026-11-20 · `126 passed, 2 skipped` · `ruff` clean · demo aggregates `1 urgent / 9 high / 17 elevated / 1.0 expected cases`
+**Last verified:** 2026-11-20 · `126 passed, 2 skipped` (125/3 in a fresh clone) · `ruff` clean · demo aggregates `1 urgent / 9 high / 17 elevated / 1.0 expected cases`
 
 **Status:** core build, documentation, tests, and demo UX are done. **Remaining: record the 3-minute video, rehearse, and submit.**
 
@@ -69,7 +69,7 @@ Legend: `[x]` done · `[ ]` to do · `[~]` partial / disclosed gap (not a blocke
 | Check | Status | Command / evidence |
 |---|---|---|
 | Install from clean | [x] Done | `make setup` |
-| Test suite | [x] Done | `126 passed, 2 skipped` |
+| Test suite | [x] Done | `126 passed, 2 skipped` (125/3 in a fresh clone) |
 | Lint | [x] Done | `ruff check app nabdh tests scripts` |
 | JS syntax | [x] Done | `node --check app/static/app.js` |
 | Demo cohort | [x] Done | 60 rows → 1 urgent / 9 high / 17 elevated / 4 missed / 1.0 expected |

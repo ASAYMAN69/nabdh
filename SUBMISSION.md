@@ -122,7 +122,7 @@ The four previously silent false-negative paths — non-canonical units, hyperte
 
 ### 5.4 Test suite
 
-`126 passed, 2 skipped` (pytest), including unit conversion and provenance, BP/pregnancy escalation, known-diabetic BP crisis, sex auto-detection, reasoning guardrails, CSV export, API failure handling, suppression semantics, and pinned demo aggregates.
+`126 passed, 2 skipped` (125/3 in a fresh clone; the raw-NHANES test skips when the raw files aren't committed), including unit conversion and provenance, BP/pregnancy escalation, known-diabetic BP crisis, sex auto-detection, reasoning guardrails, CSV export, API failure handling, suppression semantics, and pinned demo aggregates.
 
 ## 6. How to run
 

@@ -12,7 +12,7 @@ Nabdh ranks adults for cardiometabolic screening using questionnaire and anthrop
 make setup          # create .venv and install dependencies
 make demo           # serve on http://127.0.0.1:8000
 make serve          # remote server: bind 0.0.0.0:8000
-make test           # 126 passed, 2 skipped
+make test           # 126 passed, 2 skipped (125/3 in a fresh clone)
 ```
 
 `make setup` uses `python3` by default. On a server with a different interpreter, override it:
