@@ -18,6 +18,8 @@ make test           # 126 passed, 2 skipped (125/3 in a fresh clone)
 `make setup` uses `python3` by default. On a server with a different interpreter, override it:
 `make setup BOOTSTRAP_PYTHON=python3.12`.
 
+On the upload card, **Load 206-record demo** runs the full 206-row QA master with one click.
+
 `make demo` does not require retraining: the deployed model artifacts and the WHO growth tables are committed. Raw NHANES source files are not committed; they are only needed to retrain (`python -m nabdh.model.train`).
 
 Open `http://127.0.0.1:8000/`, then upload `data/sample/uae_demo_cohort.csv`. Clinician templates are `data/sample/clinician_template.csv` (full), `data/sample/clinician_template_minimal.csv` (4 columns), and `data/sample/clinician_template_lab_units.csv` (labs in non-standard units); all are downloadable from the upload screen. The one-row clinician probes are in `data/sample/probes/`.

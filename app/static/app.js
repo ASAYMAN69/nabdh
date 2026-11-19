@@ -665,6 +665,24 @@ function wireSorting() {
   });
 }
 
+async function loadDemoCohort() {
+  const btn = $("btn-demo");
+  if (btn) btn.disabled = true;
+  try {
+    showNotices(["Loading the 206-record demo cohort…"], "info");
+    const res = await fetch("/demo-master.csv", { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const text = await res.text();
+    const file = new File([text], "00_master_all_cases.csv", { type: "text/csv" });
+    setActiveFile(file);
+    await scoreFile(file);
+  } catch (e) {
+    showNotices([`Could not load the demo cohort: ${e.message}`], "error");
+  } finally {
+    if (btn) btn.disabled = false;
+  }
+}
+
 function wireDropzone() {
   const dz = $("dropzone");
   const input = $("csv-file");
@@ -784,6 +802,9 @@ document.addEventListener("DOMContentLoaded", () => {
   wireThemeToggle();
   wireDropzone();
   wireSorting();
+
+  const demoBtn = $("btn-demo");
+  if (demoBtn) demoBtn.addEventListener("click", loadDemoCohort);
 
   $("score-form").addEventListener("submit", (e) => {
     e.preventDefault();

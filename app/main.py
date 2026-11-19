@@ -118,6 +118,21 @@ def clinician_template_lab_units() -> FileResponse:
     )
 
 
+DEMO_MASTER_PATH = (
+    Path(__file__).resolve().parents[1] / "data" / "sample" / "qa" / "00_master_all_cases.csv"
+)
+
+
+@app.api_route("/demo-master.csv", methods=["GET", "HEAD"], include_in_schema=False)
+def demo_master() -> FileResponse:
+    """Serve the 206-row QA master for the one-click demo button."""
+    return FileResponse(
+        DEMO_MASTER_PATH,
+        media_type="text/csv",
+        headers={"Cache-Control": "no-cache"},
+    )
+
+
 @app.api_route("/", methods=["GET", "HEAD"], include_in_schema=False)
 def serve_index() -> FileResponse:
     """Serve the vanilla HTML/JS/CSS frontend on the same origin."""
